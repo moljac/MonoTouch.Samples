@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleCode.cs">
+    <Files>
+      <File FileName="SampleCode.cs" Line="63" Column="1" />
+      <File FileName="FileSystemViewController.cs" Line="107" Column="11" />
+      <File FileName="DataManagement.txt" Line="1" Column="17" />
+      <File FileName="DataManagement.cs" Line="39" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Xsample.FilesystemAndSharing.MT>
+    <IPhoneSimulatorTarget-Debug_27CiPhoneSimulator Device="IPhone" SdkVersion="6.0" />
+  </MonoDevelop.Ide.ItemProperties.Xsample.FilesystemAndSharing.MT>
+</Properties>

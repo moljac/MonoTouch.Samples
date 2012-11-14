@@ -1,0 +1,112 @@
+10
+
+dir
+0
+https://moljac@holisticware.net:8443/svn/HolisticWare_Destination4Me/Xample.XibbedSingleController
+https://moljac@holisticware.net:8443/svn/HolisticWare_Destination4Me
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+65a4f480-89da-5e47-baba-df6a2ff0bb28
+
+AppDelegate.cs
+file
+
+
+
+add
+
+DetailView_iPhone.xib
+file
+
+
+
+add
+
+DetailViewController_iPhone.xib
+file
+
+
+
+add
+
+Info.plist
+file
+
+
+
+add
+
+Xample_XibbedSingleControllerViewController_iPad.xib
+file
+
+
+
+add
+
+DetailViewController_iPhone.designer.cs
+file
+
+
+
+add
+
+Xample.XibbedSingleController.csproj
+file
+
+
+
+add
+
+DetailViewController_iPhone.cs
+file
+
+
+
+add
+
+Main.cs
+file
+
+
+
+add
+
+Xample_XibbedSingleControllerViewController.designer.cs
+file
+
+
+
+add
+
+Xample_XibbedSingleControllerViewController_iPhone.xib
+file
+
+
+
+add
+
+Xample_XibbedSingleControllerViewController.cs
+file
+
+
+
+add
+
