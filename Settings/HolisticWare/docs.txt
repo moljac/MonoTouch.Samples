@@ -1,0 +1,63 @@
+﻿Settings and preferences
+	Apple Mac OSX
+		usually found in the menu under the 
+			"ProgramName" +/ Preferences
+	Windows
+		often under Tools +/ Options
+	Apple iOS
+		2 ways
+			settings screen[s]
+			settings application
+				Apple native (system) app 
+				allows users to edit preferences when their application is not running
+		
+		recommendation
+			settings screen[s]
+				for things that change often
+				for things that may need to change while using the application
+			settings application
+				settings that are set once for the lifecycle of the application
+
+		settings configuration
+			API
+				Apple provides us a single, unified API in which to retrieve and persist them. 
+				unified acces for:
+					Settings Application, or 
+					within application itself
+				 possible to allow the user to configure a particular setting in either location.
+
+You get the Settings Application UI for free with your application as part of the iPhone OS, but you 
+have to create and configure a special XML file (which we'll run through in a moment) that 
+tells the Settings Application what to show to configure. You can still use the API to save 
+settings, even if they're not in this XML file, but they will only show up the 
+Settings Application if they're in the file.
+
+Add a new folder to your project, by right-clicking on it and choosing Add:New Folder. Then right 
+click and choose Rename, and name it Settings.bundle
+In Xcode it is treated as special folder (zipped - kinda like packages)
+
+Add files
+hat we have our Settings Bundle, we need to add a property list file to it. The iPhone 
+looks for a file called "Root.plist" to find it's main settings screen. You can have other 
+screens as well, each one gets it's own property list file, as we'll see later, but the 
+first one must be called Root.
+
+Right-click on your Settings.bundle folder and choose Add:New File and select Misc:Empty Text 
+File, and name it "Root.plist:"
+
+*plist files are  it'll probably open up in XCode's Property List Editor:
+
+ur Root.plist file to Content. If we don't set it to Content, then it won't get included as a 
+file in our application. To change the build action, right click on the file and select 
+Build Action:Content:
+
+
+
+
+
+Access the settings
+Use the NSUserDefaults.StandardUserDefaults property to access the values set by the user.
+
+
+
+
