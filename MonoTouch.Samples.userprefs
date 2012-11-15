@@ -1,8 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XibbedSingleController/DetailViewController_iPhone.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="xSample.Sectionals.MTD/Data.cs">
     <Files>
-      <File FileName="XibbedSingleController/DetailViewController_iPhone.cs" Line="19" Column="38" />
+      <File FileName="XibbedSingleController/DetailViewController_iPhone.cs" Line="35" Column="27" />
+      <File FileName="XIBfull.To.XIBless.iPhone/AppDelegate.cs" Line="38" Column="1" />
+      <File FileName="XIBfull.To.XIBless.iPhone/MainViewCotroller.cs" Line="57" Column="6" />
+      <File FileName="XIBfull.To.XIBless.iPhone/docs.txt" Line="7" Column="2" />
+      <File FileName="UITableCellViewFromXIBCustomized/ListSource.cs" Line="42" Column="21" />
+      <File FileName="UITableCellViewFromXIBCustomized/CustomListCell.cs" Line="21" Column="3" />
+      <File FileName="xSample.Sectionals.MTD/Data.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

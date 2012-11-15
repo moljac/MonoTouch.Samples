@@ -1,0 +1,7 @@
+http://pauliom.com/2010/03/07/creating-a-very-simple-monotouch-application-without-the-interface-builder/
+
+
+Here is another simple way to remove the XIB reference from the project: delete the MainWindow.xib, 
+right-click on the project name, select the menu Options, then IPhone Application and clean the "MainWindow"
+ reference in the "Main Interface File" textbox. You can prevent the "Failed to load NSMainNibFile MainWindow" 
+ error by doing so too.
