@@ -22,9 +22,12 @@ namespace TEST
 		// TODO: delegate
 		public void UpdateData(string name, string timespan, bool delete)
 		{
-			lblDate.Text = name;
-			lblName.Text = timespan;
+			lblName.Text = name;
+			lblDate.Text = timespan;
 			btnDelete.Hidden = delete;	// (Mapping["delte"] == "true") ? true : false;
+
+			// make View dirty
+			this.SetNeedsDisplay();
 		}
 
 
