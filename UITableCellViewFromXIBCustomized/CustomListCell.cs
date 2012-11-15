@@ -8,7 +8,8 @@ using System.Collections.Generic;
 
 namespace TEST
 {
-	public partial class CustomListCell : UITableViewCell
+	public partial class CustomListCell 
+		: UITableViewCell
 	{  
 		public CustomListCell () : base()
 		{
@@ -18,17 +19,12 @@ namespace TEST
 		{
 		}
 
-		public delegate void UpdateWithData<BusinessobjecType>(BusinessobjecType bo);
-		//private event UpdateWithData UpdateWithDataDelegate;
-
-		public static Dictionary<string, string> Mapping;
-
 		// TODO: delegate
-		public void UpdateWithData()
-		{  
-			lblDate.Text = "Date"; 		// Mapping["Elapsed"];
-			lblName.Text = "name";  	// Mapping["TimeStamp"];
-			btnDelete.Hidden = true;	// (Mapping["delte"] == "true") ? true : false;
+		public void UpdateData(string name, string timespan, bool delete)
+		{
+			lblDate.Text = name;
+			lblName.Text = timespan;
+			btnDelete.Hidden = delete;	// (Mapping["delte"] == "true") ? true : false;
 		}
 
 

@@ -25,15 +25,25 @@ namespace TEST
 
 			List<SectionalInformation> data_sectional_info = Data.SectionalInformation ();
 
-			foreach (SectionalInformation si in data_sectional_info) {
+			foreach (SectionalInformation si in data_sectional_info) 
+			{
+
 				CustomElement<SectionalInformation, CustomListCell> ce;
 				ce = new CustomElement<SectionalInformation, CustomListCell>();
+
 				ce.BusinessObject = si;
-				ce.PresentationObjectCell = null; // if null will be extraced from xib hahahahahahaha
+				ce.PresentationObjectCell = null; // if null will be extracted from xib hahahahahahaha
 				ce.ParentTableView = this.TableView;
+				CustomListCell clc = ce.PresentationObjectCell as CustomListCell;
+				clc.UpdateData(si.Name, si.Elapsed.ToString(), si.Delete);
+				//ce.UpdateData += delegate(UITableViewCell c)
+				//{
+				//};
 
 				data_ui.Add(ce);
 			}
+
+
 			Root = new RootElement ("MTD") 
 			{
 				new Section ("First Section"){
@@ -50,6 +60,10 @@ namespace TEST
 				{
 				}
 			};
+		}
+
+		void ce_UpdateData(UITableViewCell cell)
+		{
 		}
 	}
 }

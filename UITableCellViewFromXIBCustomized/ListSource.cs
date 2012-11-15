@@ -39,7 +39,6 @@ namespace TEST
 			
 			// This cell has been used before, so we need to update it's data
 			// cell.UpdateWithData (_testData [indexPath.Row]);   
-			cell.UpdateWithData();
 
 			return cell;
 		

@@ -7,7 +7,7 @@ using MonoTouch.ObjCRuntime;
 
 namespace TEST
 {
-	public class CustomElement<BusinessLogicType, PresentationType> : Element
+	public partial class CustomElement<BusinessLogicType, PresentationType> : Element
 		where 
 			PresentationType 
 			: 
@@ -57,6 +57,9 @@ namespace TEST
 		}
 
 
+		public delegate void UpdateDataDelegate(UITableViewCell cell);
+		public event UpdateDataDelegate UpdateData;
+
 		public override UITableViewCell GetCell (UITableView tv)
 		{
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
@@ -76,7 +79,7 @@ namespace TEST
 			}
 
 			// this.SomeDelegateForMapping += ////
-			(this.PresentationObjectCell as CustomListCell).UpdateWithData();
+			//(this.PresentationObjectCell as CustomListCell).UpdateWithData();
 
 			//			UIViewFromXIB = cell;    // OK NSObject from Runtime.GetNSObject is UIView!
 //			if (PresentationObjectCell == null) 
