@@ -7,6 +7,9 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 
+
+using Xsample.iFly;
+
 namespace TEST
 {
 	public partial class MTD : DialogViewController
@@ -14,9 +17,23 @@ namespace TEST
 		public MTD () : base (UITableViewStyle.Plain, null)
 		{
 
-			SectionalInformationElement sie = new SectionalInformationElement();
+			CustomElement<SectionalInformation, CustomListCell> sie;
+			sie = new CustomElement<SectionalInformation, CustomListCell> ();
 
+			List<CustomElement<SectionalInformation, CustomListCell>> data_ui;
+			data_ui = new List<CustomElement<SectionalInformation, CustomListCell>>();
 
+			List<SectionalInformation> data_sectional_info = Data.SectionalInformation ();
+
+			foreach (SectionalInformation si in data_sectional_info) {
+				CustomElement<SectionalInformation, CustomListCell> ce;
+				ce = new CustomElement<SectionalInformation, CustomListCell>();
+				ce.BusinessObject = si;
+				ce.PresentationObjectCell = null; // if null will be extraced from xib hahahahahahaha
+				ce.ParentTableView = this.TableView;
+
+				data_ui.Add(ce);
+			}
 			Root = new RootElement ("MTD") 
 			{
 				new Section ("First Section"){
@@ -25,10 +42,13 @@ namespace TEST
 					}),
 					new EntryElement ("Name", "Enter your name", String.Empty)
 				},
-				new Section ("Second Section")
+				new Section ("Second Section: Custom cell from XIB")
 				{
-					new SectionalInformationElement()
+					data_ui.ToArray()
 				},
+				new Section ("Second Section: Custom cell from XIB")
+				{
+				}
 			};
 		}
 	}

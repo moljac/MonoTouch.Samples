@@ -105,7 +105,7 @@
       <DependentUpon>CustomListCell.cs</DependentUpon>
     </Compile>
     <Compile Include="MTD.cs" />
-    <Compile Include="SectionalInformationElement.cs" />
+    <Compile Include="CustomElement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -4,12 +4,12 @@ using System.Drawing;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using System.Collections.Generic;
 
 namespace TEST
 {
 	public partial class CustomListCell : UITableViewCell
 	{  
-
 		public CustomListCell () : base()
 		{
 		}
@@ -18,11 +18,17 @@ namespace TEST
 		{
 		}
 
-		public void UpdateWithData (string name, DateTime time)
+		public delegate void UpdateWithData<BusinessobjecType>(BusinessobjecType bo);
+		//private event UpdateWithData UpdateWithDataDelegate;
+
+		public static Dictionary<string, string> Mapping;
+
+		// TODO: delegate
+		public void UpdateWithData()
 		{  
-			lblDate.Text = time.ToString();
-			lblName.Text = name;
-			btnDelete.Hidden = false;
+			lblDate.Text = "Date"; 		// Mapping["Elapsed"];
+			lblName.Text = "name";  	// Mapping["TimeStamp"];
+			btnDelete.Hidden = true;	// (Mapping["delte"] == "true") ? true : false;
 		}
 
 
