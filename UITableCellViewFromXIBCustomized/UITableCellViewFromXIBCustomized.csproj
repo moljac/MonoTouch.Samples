@@ -87,6 +87,12 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\UITableViewCell.Customization.DataLoading\Data.cs">
+      <Link>Data.cs</Link>
+    </Compile>
+    <Compile Include="..\UITableViewCell.Customization.DataLoading\SectionalInformation.cs">
+      <Link>SectionalInformation.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="ListViewController.cs" />
