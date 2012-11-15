@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Xample.XiblessNoUIViewController
+namespace TEST
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
@@ -31,13 +31,8 @@ namespace Xample.XiblessNoUIViewController
 			// If you have defined a view, add it here:
 			// window.AddSubview (navigationController.View);
 
-			UIButton button = new UIButton();
-			button.Frame = new System.Drawing.RectangleF(100,100, 100,20);
-			button.SetTitle("Test", UIControlState.Highlighted);
-			button.Hidden = false;
-
-			window.AddSubview(button);
-
+			//window.RootViewController = new ListViewController();
+			window.RootViewController = new MTD();
 
 			// make the window visible
 			window.MakeKeyAndVisible ();

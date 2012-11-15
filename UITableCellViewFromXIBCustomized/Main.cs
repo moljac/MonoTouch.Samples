@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Xample.XiblessNoUIViewController
+namespace TEST
 {
 	public class Application
 	{

@@ -1,3 +1,4 @@
+// WARNING
 //
 // This file has been generated automatically by MonoDevelop to store outlets and
 // actions made in the Xcode designer. If it is removed, they will be lost.
@@ -5,10 +6,10 @@
 //
 using MonoTouch.Foundation;
 
-namespace Xample.XibbedWithModifiedXib
+namespace TEST
 {
-	[Register ("Xample_XibbedWithModifiedXibViewController")]
-	partial class Xample_XibbedWithModifiedXibViewController
+	[Register ("ListViewController")]
+	partial class ListViewController
 	{
 		void ReleaseDesignerOutlets ()
 		{

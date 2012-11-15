@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C32D2601-6522-4C1A-A941-3330DFCA4768}</ProjectGuid>
+    <ProjectGuid>{7197C092-E05D-4191-81C3-145CF7A1ADF3}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Xample.XibbedWithModifiedXib</RootNamespace>
+    <RootNamespace>TEST</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XampleXibbedWithModifiedXib</AssemblyName>
+    <AssemblyName>TEST</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>True</DebugSymbols>
@@ -24,6 +24,7 @@
     <MtouchDebug>True</MtouchDebug>
     <MtouchProfiling>True</MtouchProfiling>
     <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -80,6 +81,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -87,14 +89,21 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Xample_XibbedWithModifiedXibViewController.cs" />
-    <Compile Include="Xample_XibbedWithModifiedXibViewController.designer.cs">
-      <DependentUpon>Xample_XibbedWithModifiedXibViewController.cs</DependentUpon>
+    <Compile Include="ListViewController.cs" />
+    <Compile Include="ListViewController.designer.cs">
+      <DependentUpon>ListViewController.cs</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <InterfaceDefinition Include="Xample_XibbedWithModifiedXibViewController_iPhone.xib" />
-    <InterfaceDefinition Include="Xample_XibbedWithModifiedXibViewController_iPad.xib" />
+    <Compile Include="ListSource.cs" />
+    <Compile Include="CustomListCell.cs" />
+    <Compile Include="CustomListCell.designer.cs">
+      <DependentUpon>CustomListCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MTD.cs" />
+    <Compile Include="SectionalInformationElement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="ListViewController.xib" />
+    <InterfaceDefinition Include="CustomListCell.xib" />
+  </ItemGroup>
 </Project>

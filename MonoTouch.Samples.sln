@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiblessNoUIViewController",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settings", "Settings\Settings.csproj", "{497AD6C9-797F-4578-A440-EC619F7057D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITableCellViewFromXIBCustomized", "UITableCellViewFromXIBCustomized\UITableCellViewFromXIBCustomized.csproj", "{7197C092-E05D-4191-81C3-145CF7A1ADF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
@@ -119,6 +121,22 @@ Global
 		{497AD6C9-797F-4578-A440-EC619F7057D8}.Release|iPhone.Build.0 = Release|iPhone
 		{497AD6C9-797F-4578-A440-EC619F7057D8}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{497AD6C9-797F-4578-A440-EC619F7057D8}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Release|iPhone.Build.0 = Release|iPhone
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

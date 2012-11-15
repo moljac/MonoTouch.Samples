@@ -91,5 +91,8 @@
     <None Include="Info.plist" />
     <None Include="Settings.Bundle\Root.plist" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="HolisticWare\cs_xsd2code\" />
+    <Folder Include="HolisticWare\cs_XsdObjectGen\" />
+  </ItemGroup>
 </Project>

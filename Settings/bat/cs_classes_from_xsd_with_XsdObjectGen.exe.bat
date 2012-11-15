@@ -13,8 +13,13 @@ set SCHEMAS=^
 
 	
 for %%s IN (%SCHEMAS%) DO (
-echo %%s
-"%ProgramFiles%\XSDObjectGenerator\XSDObjectGen.exe" ^
+	echo %%s
+	set FILENAME="%%~nxs:
+	SET FILENAME_WO_EXT=%FILENAME:.xsd=%
+	echo FILENAME       =!FILENAME!
+	echo FILENAME_WO_EXT=!FILENAME_WO_EXT!
+
+	"%ProgramFiles%\XSDObjectGenerator\XSDObjectGen.exe" ^
 		%%s ^
 		/c ^
 		/p ^
@@ -22,22 +27,7 @@ echo %%s
 		/l:cs ^
 		/n:HolisticWare
 
-pause
 )	
 
 
 pause
-
-
-
-::	set I1=%EBAY_COM%%%i
-::	set I2=!EBAY_DE!%%i
-::	set I3=%CL_C%%%i
-::	set I4=%CL_I%%%i
-::
-::	echo I1=!I1!
-::	echo I2=!I2!
-::	echo I3=!I3!
-::	echo I4=!I4!
-::
-::	set I_ALL=!I_ALL! !I1! !I2! !I3! !I4!
