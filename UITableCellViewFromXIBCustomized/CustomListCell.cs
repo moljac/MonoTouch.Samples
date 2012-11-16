@@ -24,7 +24,7 @@ namespace TEST
 		{
 			lblName.Text = name;
 			lblDate.Text = timespan;
-			btnDelete.Hidden = delete;	// (Mapping["delte"] == "true") ? true : false;
+			btnDelete.Hidden = false;	// (Mapping["delte"] == "true") ? true : false;
 
 			// make View dirty
 			this.SetNeedsDisplay();

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XIBfull.To.XIBless.iPhone",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITableViewCell.Customization.DataLoading", "UITableViewCell.Customization.DataLoading\UITableViewCell.Customization.DataLoading.csproj", "{56BB61A0-78F1-4168-8AA6-89B74E02E443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIViewModalPresentationWithDVC", "UIViewModalPresentationWithDVC\UIViewModalPresentationWithDVC.csproj", "{62237453-5F2C-4995-8929-24847D28AD30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
@@ -91,6 +93,22 @@ Global
 		{56BB61A0-78F1-4168-8AA6-89B74E02E443}.Release|iPhone.Build.0 = Release|iPhone
 		{56BB61A0-78F1-4168-8AA6-89B74E02E443}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{56BB61A0-78F1-4168-8AA6-89B74E02E443}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.AppStore|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.AppStore|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.Debug|iPhone.Build.0 = Debug|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.Release|iPhone.ActiveCfg = Release|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.Release|iPhone.Build.0 = Release|iPhone
+		{62237453-5F2C-4995-8929-24847D28AD30}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{62237453-5F2C-4995-8929-24847D28AD30}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{7197C092-E05D-4191-81C3-145CF7A1ADF3}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
@@ -173,7 +191,7 @@ Global
 		{E6C7D810-4875-44CA-B285-085BE7512356}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = UITableCellViewFromXIBCustomized\UITableCellViewFromXIBCustomized.csproj
+		StartupItem = UIViewModalPresentationWithDVC\UIViewModalPresentationWithDVC.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
