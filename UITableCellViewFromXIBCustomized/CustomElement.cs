@@ -53,10 +53,10 @@ namespace TEST
 			}
 		}
 
-		NSArray views_from_xib;
-		public string 			XIBNIBName = "CustomListCell";
+		NSArray 			views_from_xib;
+		public string 		XIBNIBName = "CustomListCell";
 		public UITableView	ParentTableView;
-		CustomListCell cell;
+		CustomListCell 		cell;
 		//---------------------------------------------------------------------
 
 		public CustomElement () : base (null)

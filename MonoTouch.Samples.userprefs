@@ -1,12 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UIViewModalPresentationWithDVC/MainView.cs">
-    <Files>
-      <File FileName="UIViewModalPresentationWithDVC/AppDelegate.cs" Line="33" Column="39" />
-      <File FileName="UIViewModalPresentationWithDVC/MainView.cs" Line="75" Column="55" />
-      <File FileName="UIViewModalPresentationWithDVC/DVC.cs" Line="17" Column="4" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableCellViewFromXIBCustomized/CustomElement.cs" line="82" />

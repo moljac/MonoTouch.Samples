@@ -46,13 +46,7 @@ namespace TEST
 
 			Root = new RootElement ("MTD") 
 			{
-				new Section ("First Section"){
-					new StringElement ("Hello", () => {
-						new UIAlertView ("Hola", "Thanks for tapping!", null, "Continue").Show (); 
-					}),
-					new EntryElement ("Name", "Enter your name", String.Empty)
-				},
-				new Section ("Second Section: Custom cell from XIB")
+				new Section ("First Section: Custom cell from XIB")
 				{
 					data_ui.ToArray()
 				},
