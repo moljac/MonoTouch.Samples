@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace UIViewModalPresentationWithDVC
+namespace TabBar
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
@@ -15,6 +15,7 @@ namespace UIViewModalPresentationWithDVC
 	{
 		// class-level declarations
 		UIWindow window;
+		TabBarController tabBarController;
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -28,11 +29,11 @@ namespace UIViewModalPresentationWithDVC
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			
-			// If you have defined a view, add it here:
-			// window.AddSubview (navigationController.View);
-			MainView mainView = new MainView();
-			window.RootViewController = mainView;
+			tabBarController = new TabBarController();
 
+			// If you have defined a view, add it here:
+			window.RootViewController = tabBarController;
+			
 			// make the window visible
 			window.MakeKeyAndVisible ();
 			
