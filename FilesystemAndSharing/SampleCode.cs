@@ -79,16 +79,34 @@ namespace FileSystem
 
 		public static void WriteFile(UITextView display)
 		{
+			string[] paths =  new string[]
+			{
+			  Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments)
+			, "./"
+			, "../"		// 
+			// , "../../"	// OK simlator not on device
+			//, "../../.."
+				// , "/" // 
+			};
+
 			// Sample code from the article
 			var documents =
 				Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
-			var filename = Path.Combine (documents, "Write.txt");
-			File.WriteAllText(filename, "Write this text into a file!");
+
+			foreach(string p in paths)
+			{
+				string filename = Path.Combine (p, "Write.txt");				
+				File.WriteAllText(filename, "Write this text into a file!");
+
+				display.Text += 
+						"Text was written to a file." + Environment.NewLine
+					+ "-----------------" + Environment.NewLine
+						+ System.IO.File.ReadAllText(filename);
+			}
+
+
 			
 			// Output to app UITextView
-			display.Text = "Text was written to a file." + Environment.NewLine
-						+ "-----------------" + Environment.NewLine
-						+ System.IO.File.ReadAllText(filename);
 		}
 
 		public static void CreateDirectory(UITextView display)

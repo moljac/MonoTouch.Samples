@@ -1,6 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilesystemAndSharing/SampleCode.cs">
+    <Files>
+      <File FileName="FilesystemAndSharing/FileSystemViewController.cs" Line="1" Column="1" />
+      <File FileName="FilesystemAndSharing/SampleCode.cs" Line="89" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableCellViewFromXIBCustomized/CustomElement.cs" line="82" />
