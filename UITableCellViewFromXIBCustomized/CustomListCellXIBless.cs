@@ -36,13 +36,23 @@ namespace TEST
 		}
 
 		//CUSTOM CELL
-		public void DrawCell()
+		public UIView[] DrawCell()
 		{
 			ContentView.Frame = new RectangleF(0,0,768,44);
 
-			btnDelete = new UIButton(new RectangleF(7,8,103,27));
+			btnDelete = UIButton.FromType(UIButtonType.Custom);
+			btnDelete.Frame = new RectangleF(7,8,103,27);
+			btnDelete.BackgroundColor = UIColor.Blue;
+			btnDelete.SetTitle("Title", UIControlState.Normal);
+			btnDelete.TouchUpInside += (object sender, EventArgs e) => 
+			{
+				btnDelete.BackgroundColor = UIColor.Red;
+			};
 			lblName = new UILabel(new RectangleF(140,11,489,21));
 			lblDate = new UILabel(new RectangleF(648,11,100,21));
+
+			lblName.Text = "Name";
+			lblDate.Text = DateTime.Now.ToString();
 
 			UIView [] views = 
 			{
@@ -54,6 +64,7 @@ namespace TEST
 			
 			ContentView.AddSubviews(views);
 
+			return views;
 		}
 
 		

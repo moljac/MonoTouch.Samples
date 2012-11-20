@@ -191,7 +191,7 @@ Global
 		{E6C7D810-4875-44CA-B285-085BE7512356}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = FilesystemAndSharing\FilesystemAndSharing.csproj
+		StartupItem = UITableCellViewFromXIBCustomized\UITableCellViewFromXIBCustomized.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

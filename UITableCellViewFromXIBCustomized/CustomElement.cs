@@ -39,10 +39,16 @@ namespace TEST
 					// Allocate a cell
 					if( null == views_from_xib)
 					{
-					views_from_xib = NSBundle.MainBundle.LoadNib (XIBNIBName, ParentTableView, null);
+						// Loading XIB - all its views!!
+						views_from_xib = NSBundle.MainBundle.LoadNib (XIBNIBName, ParentTableView, null);
+
 					}
 					// TODO: remove XIB stuff
 					presentation_object_cell = Runtime.GetNSObject (views_from_xib.ValueAt (0)) as UITableViewCell;
+
+					// Loading from object
+					CustomListCellXIBless ccx = new CustomListCellXIBless();
+					presentation_object_cell = ccx;
 				}
 
 				return presentation_object_cell;

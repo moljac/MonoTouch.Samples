@@ -34,11 +34,15 @@ namespace TEST
 				ce.BusinessObject = si;
 				ce.PresentationObjectCell = null; // if null will be extracted from xib hahahahahahaha
 				ce.ParentTableView = this.TableView;
-				CustomListCell clc = ce.PresentationObjectCell as CustomListCell;
-				clc.UpdateData(si.Name, si.Elapsed.ToString(), si.Delete);
-				//ce.UpdateData += delegate(UITableViewCell c)
-				//{
-				//};
+
+				//CustomListCell clc = ce.PresentationObjectCell as CustomListCell;
+				// clc.UpdateData(si.Name, si.Elapsed.ToString(), si.Delete);
+
+				CustomListCellXIBless clcxl = new CustomListCellXIBless();
+
+				ce.UpdateData += delegate(UITableViewCell c)
+				{
+				};
 
 				data_ui.Add(ce);
 			}

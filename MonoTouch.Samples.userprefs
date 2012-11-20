@@ -1,14 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FilesystemAndSharing/SampleCode.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITableCellViewFromXIBCustomized/CustomListCellXIBless.cs">
     <Files>
       <File FileName="FilesystemAndSharing/FileSystemViewController.cs" Line="1" Column="1" />
       <File FileName="FilesystemAndSharing/SampleCode.cs" Line="89" Column="4" />
+      <File FileName="UITableCellViewFromXIBCustomized/CustomListCellXIBless.cs" Line="49" Column="45" />
+      <File FileName="UITableCellViewFromXIBCustomized/MTD.cs" Line="40" Column="1" />
+      <File FileName="UITableViewCell.Customization.DataLoading/SectionalInformation.cs" Line="1" Column="1" />
+      <File FileName="UITableCellViewFromXIBCustomized/CustomElement.cs" Line="43" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableCellViewFromXIBCustomized/CustomElement.cs" line="82" />
+      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableCellViewFromXIBCustomized/CustomElement.cs" line="88" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
