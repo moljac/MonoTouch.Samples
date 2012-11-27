@@ -42,14 +42,21 @@ namespace TEST
 
 			btnDelete = UIButton.FromType(UIButtonType.Custom);
 			btnDelete.Frame = new RectangleF(7,8,103,27);
-			btnDelete.BackgroundColor = UIColor.Blue;
-			btnDelete.SetTitle("Title", UIControlState.Normal);
+	
+			//UIControlState = Normal -> default system state for iOS element
+			//UIControlState = Highlited -> Highlighted state of a control. 
+			//								A control enters this state when a touch enters and exits 
+			//								during tracking and when there is a touch up event.
+			btnDelete.SetTitleColor(UIColor.Blue,UIControlState.Normal);
+			btnDelete.SetTitleColor(UIColor.Red,UIControlState.Highlighted);
+
+			btnDelete.SetTitle("Delete", UIControlState.Normal);
 			btnDelete.TouchUpInside += (object sender, EventArgs e) => 
 			{
-				btnDelete.BackgroundColor = UIColor.Red;
+				
 			};
 			lblName = new UILabel(new RectangleF(140,11,489,21));
-			lblDate = new UILabel(new RectangleF(648,11,100,21));
+			lblDate = new UILabel(new RectangleF(583,11,165,21));
 
 			lblName.Text = "Name";
 			lblDate.Text = DateTime.Now.ToString();
