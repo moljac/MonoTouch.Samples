@@ -1,5 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="UITableCellViewFromXIBCustomized/CustomListCellXIBless.cs">
     <Files>
       <File FileName="FilesystemAndSharing/FileSystemViewController.cs" Line="1" Column="1" />
@@ -8,6 +9,15 @@
       <File FileName="UITableCellViewFromXIBCustomized/MTD.cs" Line="40" Column="1" />
       <File FileName="UITableViewCell.Customization.DataLoading/SectionalInformation.cs" Line="1" Column="1" />
       <File FileName="UITableCellViewFromXIBCustomized/CustomElement.cs" Line="43" Column="7" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITableCellViewFromXIBCustomized/CustomListCellXIB.designer.cs">
+    <Files>
+      <File FileName="UITableCellViewFromXIBCustomized/MTD.cs" Line="49" Column="24" />
+      <File FileName="UITableCellViewFromXIBCustomized/CustomListCell.cs" Line="37" Column="1" />
+      <File FileName="UITableCellViewFromXIBCustomized/CustomListCellXIBless.cs" Line="45" Column="4" />
+      <File FileName="UITableCellViewFromXIBCustomized/CustomElement.cs" Line="59" Column="20" />
+      <File FileName="UITableCellViewFromXIBCustomized/CustomListCellXIB.designer.cs" Line="1" Column="1" />
+>>>>>>> UserPrefs
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
