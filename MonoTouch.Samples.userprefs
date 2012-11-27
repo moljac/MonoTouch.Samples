@@ -1,5 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="UITableCellViewFromXIBCustomized/CustomElement.cs">
     <Files>
       <File FileName="UITableCellViewFromXIBCustomized/CustomListCellXIBless.cs" Line="15" Column="1" />
@@ -9,6 +10,9 @@
       <File FileName="UITableCellViewFromXIBCustomized/CustomElement.cs" Line="54" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+=======
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> FileSystem test
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -3,6 +3,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 using MonoTouch.UIKit;
+using System.Diagnostics;
 
 namespace FileSystem
 {
@@ -83,10 +84,10 @@ namespace FileSystem
 			{
 			  Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments)
 			, "./"
-			, "../"		// 
-			// , "../../"	// OK simlator not on device
-			//, "../../.."
-				// , "/" // 
+			, "../"			// 
+			, "../../"		// OK simlator not on device
+			, "../../.."
+			, "/" 			// 
 			};
 
 			// Sample code from the article
@@ -95,13 +96,49 @@ namespace FileSystem
 
 			foreach(string p in paths)
 			{
-				string filename = Path.Combine (p, "Write.txt");				
-				File.WriteAllText(filename, "Write this text into a file!");
+				string directory = Path.Combine ("DemoDir");
+				string filename = Path.Combine (p,"Write.txt");
+				string filename_in_directory = Path.Combine (p, directory, "Write.txt");
 
-				display.Text += 
-						"Text was written to a file." + Environment.NewLine
-					+ "-----------------" + Environment.NewLine
-						+ System.IO.File.ReadAllText(filename);
+				string msg = "";
+
+				try
+				{
+					File.WriteAllText(filename, "Write this text into a file!");
+					msg += 
+						"File write OK  = " + filename + Environment.NewLine
+							+ "-----------------" + Environment.NewLine
+							+ System.IO.File.ReadAllText(filename)
+							;
+				}
+				catch(Exception exc)
+				{
+					msg += "File write !OK = " + filename;
+
+				}
+
+				Debug.WriteLine(msg);
+				display.Text += msg;
+
+				msg = "";
+				try
+				{
+					Directory.CreateDirectory(directory);
+					File.WriteAllText(filename_in_directory, "Write this text into a file!");
+					msg += 
+						"File write OK  = " + filename_in_directory + Environment.NewLine
+							+ "-----------------" + Environment.NewLine
+							+ System.IO.File.ReadAllText(filename)
+							;
+				}
+				catch(Exception exc)
+				{
+					msg += "File write !OK = " + filename_in_directory;
+					
+				}
+
+				Debug.WriteLine(msg);
+				display.Text += msg;
 			}
 
 
