@@ -110,66 +110,6 @@
     <Content Include="SubFolderStructureSampleFromBundlePackage\images\appharbor-build-results-02.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-application-status-online.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-01.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-patching.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-resource-policies.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-runtime-binaries.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-launch-application-error.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-01.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-02.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-03.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-04.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-01.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-11.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-12.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-13.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-14.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-01.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-02.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-03.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-04.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-published-01.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-published-02.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
