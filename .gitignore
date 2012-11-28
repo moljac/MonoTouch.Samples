@@ -108,3 +108,9 @@ Backup*/
 UpgradeLog*.XML
 
 .DS_Store
+
+Settings/.DS_Store
+
+UITableCellViewFromXIBCustomized/.DS_Store
+
+XIBfull.To.XIBless.iPhone/.DS_Store
