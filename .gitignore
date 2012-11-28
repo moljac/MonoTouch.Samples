@@ -118,3 +118,5 @@ XIBfull.To.XIBless.iPhone/.DS_Store
 iOSDevice.Settings/.DS_Store
 
 UITableCellViewFromXIBCustomized/.DS_Store
+
+*.csproj.user
