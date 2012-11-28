@@ -103,8 +103,8 @@
     <Compile Include="CustomListCell.designer.cs">
       <DependentUpon>CustomListCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="MTD.cs" />
     <Compile Include="SectionalInformationElement.cs" />
+    <Compile Include="MonoTouchDialog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
