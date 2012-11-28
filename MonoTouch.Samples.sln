@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITableViewCellCustomizatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iPhone.FileSystem", "iPhone.FileSystem\iPhone.FileSystem.csproj", "{61858F3F-B9CA-438C-955F-B36C80D25B98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabBarOnTopDVC", "TabBarOnTopDVC\TabBarOnTopDVC.csproj", "{F668A965-5E62-45E8-BB00-CE020F1B635C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
@@ -207,13 +209,25 @@ Global
 		{E6C7D810-4875-44CA-B285-085BE7512356}.Release|iPhone.Build.0 = Release|iPhone
 		{E6C7D810-4875-44CA-B285-085BE7512356}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{E6C7D810-4875-44CA-B285-085BE7512356}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.AppStore|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.AppStore|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Release|iPhone.Build.0 = Release|iPhone
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-<<<<<<< HEAD
-		StartupItem = UITabBarOnTop\TabBarOnTop.csproj
-=======
-		StartupItem = FilesystemAndSharing\FilesystemAndSharing.csproj
->>>>>>> FileSystem test
+		StartupItem = TabBarOnTopDVC\TabBarOnTopDVC.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
