@@ -1,91 +1,0 @@
-10
-
-dir
-0
-https://Mel@adventurepilot.sourcerepo.com/adventurepilot/iFlySVN/src/iPhone.FileSystem
-https://Mel@adventurepilot.sourcerepo.com/adventurepilot/iFlySVN
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-34a4b9cb-b999-49c6-9554-23b734997095
-
-AppDelegate.cs
-file
-
-
-
-add
-
-iPhone.FileSystem.csproj
-file
-
-
-
-add
-
-Info.plist
-file
-
-
-
-add
-
-ITunesFilesharingDeployment.xib
-file
-
-
-
-add
-
-ITunesFilesharingDeployment.designer.cs
-file
-
-
-
-add
-
-Main.cs
-file
-
-
-
-add
-
-ITunesFilesharingDeployment.cs
-file
-
-
-
-add
-
-SDMMCDisk_structure.txt
-file
-
-
-
-add
-
-FileManager.cs
-file
-
-
-
-add
-

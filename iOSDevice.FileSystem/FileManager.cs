@@ -23,13 +23,13 @@ namespace iPhone.FileSystem
 				Path.Combine
 					(
 					  Environment.GetFolderPath(Environment.SpecialFolder.Personal)
-					, "SDMMCDisk"
+					, "SampleSubFolder"
 					);
 				// Path.Combine  // OK
 				//(
 				//  ".."
 				//, "Documents"
-				//, "SDMMCDisk"
+				//, "SampleSubFolder"
 				//);
 			
 			if (! Directory.Exists (DirectoryDestination))
@@ -40,12 +40,20 @@ namespace iPhone.FileSystem
 			return;
 		}
 
-		public void Deploy ()
+		/// <summary>
+		/// Textual file defining deploying location of files located flat in iTunes folder
+		/// 
+		/// To load definition file from iTunse folder (together with content files)
+		///		../Documents/filename.txt would load form iTunes folder
+		///	To load from package bundle (root in this case):
+		///		./SampleSubFolder-ContentStructureFromBundlePackage.txt
+		/// </summary>
+		/// <param name="content_structure_file"></param>
+		public void DeployFromiTunesSharedLibrary(string content_structure_file)
 		{
 			try
 			{
-				string filename = "SDMMCDisk_structure.txt";
-				using (StreamReader sr = new StreamReader(filename))
+				using (StreamReader sr = new StreamReader(content_structure_file))
 				{
 					Content = sr.ReadToEnd ();
 					Debug.WriteLine (Content);
@@ -58,13 +66,13 @@ namespace iPhone.FileSystem
 			}
 
 			string[] content_lines = Content.Split
-													(
-				 									  new string[]
-														{
-														  System.Environment.NewLine
-														}
-													, StringSplitOptions.RemoveEmptyEntries
-			);
+												(
+		 									     new string[]
+													{
+													  System.Environment.NewLine
+													 }
+												, StringSplitOptions.RemoveEmptyEntries
+												);
 
 
 
@@ -85,15 +93,15 @@ namespace iPhone.FileSystem
 					s_trimmed = s_trimmed.Replace("\r","");
 
 					file_source = Path.Combine
-														(
-														  DirectorySource
-														, s_trimmed
-														);
+											(
+												DirectorySource
+											, s_trimmed
+											);
 					file_destination = Path.Combine
-														(
-														  directory_current
-														, s_trimmed
-														);
+												(
+													directory_current
+												, s_trimmed
+												);
 
 					if (! File.Exists(file_source))
 					{

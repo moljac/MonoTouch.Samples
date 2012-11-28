@@ -34,8 +34,10 @@ namespace iPhone.FileSystem
 		void buttonDeploy_HandleTouchUpInside (object sender, EventArgs e)
 		{
 			FileManager fm = new FileManager();
-			fm.Deploy();
+			string filename = "SampleSubFolder-ContentStructure.txt";
+			fm.DeployFromiTunesSharedLibrary(filename);
 
+			return;
 		}
 		
 		public override void ViewDidUnload ()

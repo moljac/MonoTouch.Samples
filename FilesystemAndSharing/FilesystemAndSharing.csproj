@@ -66,6 +66,7 @@
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileManager.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="FileSystemViewController.cs" />

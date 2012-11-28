@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61858F3F-B9CA-438C-955F-B36C80D25B98}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>iPhone.FileSystem</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>iPhoneFileSystem</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>True</MtouchProfiling>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ITunesFilesharingDeployment.cs" />
+    <Compile Include="ITunesFilesharingDeployment.designer.cs">
+      <DependentUpon>ITunesFilesharingDeployment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="ITunesFilesharingDeployment.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SubFolderStructureSampleFromBundlePackage-DeploymentDefinition.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\appharbor-build-results-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\appharbor-build-results-02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-application-status-online.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-patching.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-resource-policies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-definition-runtime-binaries.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-launch-application-error.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-04.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-published-14.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-promotion-to-sandbox-04.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-published-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-published-02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-publishing-form-sandbox-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-compositec1-deployment-publishing-from-sandbox-02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-process-archiver-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-process-archiver-02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-process-archiver-03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\images\apprenda\apprenda-process-archiver-04.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SubFolderStructureSampleFromBundlePackage\TextFile3.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\TextFile4.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\TextFile5.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\TextFile2.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\TextFile1.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\text\TextFile1.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\text\TextFile2.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\text\TextFile3.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\text\TextFile4.txt" />
+    <Content Include="SubFolderStructureSampleFromBundlePackage\text\TextFile5.txt" />
+    <Content Include="SubFolderStructureSampleFromiTunes\appharbor-build-results-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\appharbor-build-results-02.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-application-status-online.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-definition-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-definition-patching.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-definition-resource-policies.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-definition-runtime-binaries.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-launch-application-error.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-02.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-03.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-04.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-published-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-published-11.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-published-12.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-published-13.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-published-14.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-sandbox-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-sandbox-02.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-sandbox-03.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-promotion-to-sandbox-04.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-published-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-published-02.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-publishing-form-sandbox-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-compositec1-deployment-publishing-from-sandbox-02.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-process-archiver-01.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-process-archiver-02.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-process-archiver-03.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\apprenda-process-archiver-04.png" />
+    <Content Include="SubFolderStructureSampleFromiTunes\TextFile1.txt" />
+    <Content Include="SubFolderStructureSampleFromiTunes\TextFile2.txt" />
+    <Content Include="SubFolderStructureSampleFromiTunes\TextFile3.txt" />
+    <Content Include="SubFolderStructureSampleFromiTunes\TextFile4.txt" />
+    <Content Include="SubFolderStructureSampleFromiTunes\TextFile5.txt" />
+  </ItemGroup>
+  <ItemGroup />
+</Project>
