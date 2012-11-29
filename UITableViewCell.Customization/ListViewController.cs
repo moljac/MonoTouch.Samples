@@ -7,11 +7,11 @@ using MonoTouch.UIKit;
 
 namespace MonoMobile.Dialog
 {
-	public partial class ListViewController : UITableViewController
+	public partial class UITableViewControllerForList : UITableViewController
 	{
-		public ListViewController () : base ("ListViewController", null)
+		public UITableViewControllerForList () : base ("UITableViewControllerForList", null)
 		{
-			this.TableView.Source = new ListSource();
+			this.TableView.Source = new UITableViewSourceForListOfSamples();
 		}
 		
 		public override void DidReceiveMemoryWarning ()

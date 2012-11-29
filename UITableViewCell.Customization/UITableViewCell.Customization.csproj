@@ -98,17 +98,17 @@
     <Compile Include="ListViewController.designer.cs">
       <DependentUpon>ListViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListSource.cs" />
-    <Compile Include="CustomListCell.cs" />
-    <Compile Include="CustomListCell.designer.cs">
-      <DependentUpon>CustomListCell.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SectionalInformationElement.cs" />
-    <Compile Include="MonoTouchDialog.cs" />
+    <Compile Include="UITableViewSourceForListOfSamples.cs" />
+    <Compile Include="DialogViewControllerForElementCustomDerived.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <InterfaceDefinition Include="ListViewController.xib" />
-    <InterfaceDefinition Include="CustomListCell.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MonoMobile.Dialog\MonoMobile.Dialog.Touch\MonoMobile.Dialog.Touch.csproj">
+      <Project>{CDFDE85F-F99B-44FD-A9F8-19224D517F3F}</Project>
+      <Name>MonoMobile.Dialog.Touch</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

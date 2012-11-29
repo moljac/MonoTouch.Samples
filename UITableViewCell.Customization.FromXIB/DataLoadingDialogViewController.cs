@@ -5,12 +5,13 @@ using System.Linq;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
-using MonoTouch.Dialog;
 
 using SampleData;
 
+//using MonoTouch.Dialog;
+using MonoMobile.Dialog;
 
-namespace TEST
+namespace UITableViewCellCustomizationFromXIB
 {
 	public partial class DataLoadingDialogViewController : DialogViewController
 	{
@@ -18,11 +19,11 @@ namespace TEST
 			: base(UITableViewStyle.Plain, null)
 		{
 
-			CustomElement<SectionalInformation, CustomListCell> sie;
-			sie = new CustomElement<SectionalInformation, CustomListCell> ();
+			ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative> sie;
+			sie = new ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative> ();
 
-			List<CustomElement<SectionalInformation, CustomListCell>> data_ui;
-			data_ui = new List<CustomElement<SectionalInformation, CustomListCell>>();
+			List<ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative>> data_ui;
+			data_ui = new List<ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative>>();
 
 			List<SectionalInformation> data_sectional_info;
 			data_sectional_info = SectionalInformationDataFactory.SectionalInformation ();
@@ -30,17 +31,17 @@ namespace TEST
 			foreach (SectionalInformation si in data_sectional_info) 
 			{
 
-				CustomElement<SectionalInformation, CustomListCell> ce;
-				ce = new CustomElement<SectionalInformation, CustomListCell>();
+				ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative> ce;
+				ce = new ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative>();
 
 				ce.BusinessObject = si;
 				ce.PresentationObjectCell = null; // if null will be extracted from xib hahahahahahaha
 				ce.ParentTableView = this.TableView;
 
-				//CustomListCell clc = ce.PresentationObjectCell as CustomListCell;
+				//UITableViewCellCustom clc = ce.PresentationObjectCell as UITableViewCellCustom;
 				// clc.UpdateData(si.Name, si.Elapsed.ToString(), si.Delete);
 
-				CustomListCellXIBless clcxl = new CustomListCellXIBless();
+				UITableViewCellCustomListXIBless clcxl = new UITableViewCellCustomListXIBless();
 
 				ce.UpdateData += delegate(UITableViewCell c)
 				{
@@ -62,7 +63,7 @@ namespace TEST
 			};
 		}
 
-		void ce_UpdateData(UITableViewCell cell)
+		void ce_UpdateData(MonoTouch.UIKit.UITableViewCell cell)
 		{
 		}
 	}

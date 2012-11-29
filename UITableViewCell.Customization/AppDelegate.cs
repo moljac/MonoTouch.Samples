@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace TEST
+namespace UITableViewCellCustomization
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
@@ -31,8 +31,8 @@ namespace TEST
 			// If you have defined a view, add it here:
 			// window.AddSubview (navigationController.View);
 
-			//window.RootViewController = new ListViewController();
-			window.RootViewController = new SectionalInformationDialogViewController();
+			//window.RootViewController = new UITableViewControllerForList();
+			window.RootViewController = new DialogViewControllerForElementCustomDerived();
 
 			// make the window visible
 			window.MakeKeyAndVisible ();

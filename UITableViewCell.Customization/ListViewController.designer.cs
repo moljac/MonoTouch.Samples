@@ -8,7 +8,7 @@ using MonoTouch.Foundation;
 
 namespace TEST
 {
-	[Register ("ListViewController")]
+	[Register ("UITableViewControllerForList")]
 	partial class ListViewController
 	{
 		void ReleaseDesignerOutlets ()

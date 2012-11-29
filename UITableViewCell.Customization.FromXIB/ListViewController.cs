@@ -5,7 +5,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace TEST
+namespace UITableViewCellCustomizationFromXIB
 {
 	public partial class ListViewController : UITableViewController
 	{
