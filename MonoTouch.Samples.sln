@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoMobile.Dialog.Touch", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XSample.MT.CustomElement", "..\MonoMobile.Dialog\XSample.MT.CustomElement\XSample.MT.CustomElement.csproj", "{F6AEFFC5-4807-49A3-83C5-661E655CB59A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementsTesting", "ElementsTestingAdvanced\ElementsTesting.csproj", "{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AdHoc|iPhone = AdHoc|iPhone
@@ -100,8 +102,27 @@ Global
 		{C32D2601-6522-4C1A-A941-3330DFCA4768}.Release|iPhone.Build.0 = Release|iPhone
 		{C32D2601-6522-4C1A-A941-3330DFCA4768}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{C32D2601-6522-4C1A-A941-3330DFCA4768}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+<<<<<<< HEAD
 		{CDB9BE1D-F0A8-487E-8E87-19A784B864E7}.AdHoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{CDB9BE1D-F0A8-487E-8E87-19A784B864E7}.AdHoc|iPhone.Build.0 = Ad-Hoc|iPhone
+=======
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.AppStore|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.AppStore|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Release|iPhone.Build.0 = Release|iPhone
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C91F6130-5BA6-4FA1-BD41-D5C9473E4E47}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+>>>>>>> UIPickerView & DragDrop & Gestures & Input Acessory
 		{CDB9BE1D-F0A8-487E-8E87-19A784B864E7}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{CDB9BE1D-F0A8-487E-8E87-19A784B864E7}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{CDB9BE1D-F0A8-487E-8E87-19A784B864E7}.AdHoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhone
