@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -86,14 +86,17 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\UITableViewCell.Customization.DataLoading\SampleData\SectionalInformation.cs">
+      <Link>SampleData\SectionalInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\UITableViewCell.Customization.DataLoading\SampleData\SectionalInformationDataFactory.cs">
+      <Link>SampleData\SectionalInformationDataFactory.cs</Link>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="TabBarController.cs" />
-    <Compile Include="DVC.cs" />
+    <Compile Include="UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.cs" />
     <Compile Include="CustomListCellXIBless.cs" />
     <Compile Include="CustomElement.cs" />
-    <Compile Include="SectionalInformation.cs" />
-    <Compile Include="Data.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

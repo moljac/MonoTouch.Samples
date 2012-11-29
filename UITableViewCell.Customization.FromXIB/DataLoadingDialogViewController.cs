@@ -7,14 +7,15 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 
+using SampleData;
 
-using Xsample.iFly;
 
 namespace TEST
 {
-	public partial class MTD : DialogViewController
+	public partial class DataLoadingDialogViewController : DialogViewController
 	{
-		public MTD () : base (UITableViewStyle.Plain, null)
+		public DataLoadingDialogViewController()
+			: base(UITableViewStyle.Plain, null)
 		{
 
 			CustomElement<SectionalInformation, CustomListCell> sie;

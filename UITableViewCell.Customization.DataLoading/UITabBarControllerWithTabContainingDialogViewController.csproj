@@ -74,9 +74,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="SectionalInformation.cs" />
+    <Compile Include="SampleData\SectionalInformation.cs" />
     <Compile Include="TabBarControllerWithTabContainingDialogViewController.cs" />
-    <Compile Include="SectionalInformationDataFactory.cs" />
+    <Compile Include="SampleData\SectionalInformationDataFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />

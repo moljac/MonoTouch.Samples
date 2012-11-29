@@ -1,20 +1,20 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TabBarOnTopDVC
+namespace SampleData
 {
 	public partial class SectionalInformation
 	{
 		//-------------------------------------------------------------------------
-# region Property bool Delete w Event post (DeleteChanged)
+		# region Property bool Delete w Event post (DeleteChanged)
 		/// <summary>
 		/// Delete
 		/// </summary>
 		public
-			bool
-				Delete
+		  bool
+		  Delete
 		{
 			get
 			{
@@ -36,15 +36,15 @@ namespace TabBarOnTopDVC
 				}
 			} // Delete.set
 		} // Delete
-		
+
 		/// <summary>
 		/// private member field for holding Delete data
 		/// </summary>
 		private
 			bool
-				delete
-				;
-		
+			delete
+			;
+
 		///<summary>
 		/// Event for wiring BusinessLogic object changes and presentation
 		/// layer notifications.
@@ -55,20 +55,20 @@ namespace TabBarOnTopDVC
 		///</summary>
 		public
 			event
-				EventHandler
-				DeleteChanged
-				;
-# endregion Property bool Delete w Event post (DeleteChanged)
+			EventHandler
+			DeleteChanged
+			;
+		# endregion Property bool Delete w Event post (DeleteChanged)
 		//-------------------------------------------------------------------------
-		
+	
 		//-------------------------------------------------------------------------
-# region Property string Name w Event post (NameChanged)
+		# region Property string Name w Event post (NameChanged)
 		/// <summary>
 		/// Name
 		/// </summary>
 		public
-			string
-				Name
+		  string
+		  Name
 		{
 			get
 			{
@@ -90,15 +90,15 @@ namespace TabBarOnTopDVC
 				}
 			} // Name.set
 		} // Name
-		
+
 		/// <summary>
 		/// private member field for holding Name data
 		/// </summary>
 		private
 			string
-				name
-				;
-		
+			name
+			;
+
 		///<summary>
 		/// Event for wiring BusinessLogic object changes and presentation
 		/// layer notifications.
@@ -109,20 +109,20 @@ namespace TabBarOnTopDVC
 		///</summary>
 		public
 			event
-				EventHandler
-				NameChanged
-				;
-# endregion Property string Name w Event post (NameChanged)
+			EventHandler
+			NameChanged
+			;
+		# endregion Property string Name w Event post (NameChanged)
 		//-------------------------------------------------------------------------
-		
+
 		//-------------------------------------------------------------------------
-# region Property TimeSpan Elapsed w Event post (ElapsedChanged)
+		# region Property TimeSpan Elapsed w Event post (ElapsedChanged)
 		/// <summary>
 		/// Elapsed
 		/// </summary>
 		public
-			TimeSpan
-				Elapsed
+		  TimeSpan
+		  Elapsed
 		{
 			get
 			{
@@ -144,15 +144,15 @@ namespace TabBarOnTopDVC
 				}
 			} // Elapsed.set
 		} // Elapsed
-		
+
 		/// <summary>
 		/// private member field for holding Elapsed data
 		/// </summary>
 		private
 			TimeSpan
-				elapsed
-				;
-		
+			elapsed
+			;
+
 		///<summary>
 		/// Event for wiring BusinessLogic object changes and presentation
 		/// layer notifications.
@@ -163,11 +163,11 @@ namespace TabBarOnTopDVC
 		///</summary>
 		public
 			event
-				EventHandler
-				ElapsedChanged
-				;
-# endregion Property TimeSpan Elapsed w Event post (ElapsedChanged)
+			EventHandler
+			ElapsedChanged
+			;
+		# endregion Property TimeSpan Elapsed w Event post (ElapsedChanged)
 		//-------------------------------------------------------------------------	
-		
+	
 	}
 }

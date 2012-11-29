@@ -31,7 +31,7 @@ namespace TabBarOnTopDVC
 			
 			// If you have defined a view, add it here:
 			// window.AddSubview (navigationController.View);
-			tabBarController = new TabBarController();
+			tabBarController = new UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers();
 			window.RootViewController = tabBarController;
 
 			// make the window visible

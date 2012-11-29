@@ -87,8 +87,11 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\UITableViewCell.Customization.DataLoading\SectionalInformation.cs">
-      <Link>SectionalInformation.cs</Link>
+    <Compile Include="..\UITableViewCell.Customization.DataLoading\SampleData\SectionalInformation.cs">
+      <Link>SampleData\SectionalInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\UITableViewCell.Customization.DataLoading\SampleData\SectionalInformationDataFactory.cs">
+      <Link>SampleData\SectionalInformationDataFactory.cs</Link>
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -97,16 +100,13 @@
       <DependentUpon>ListViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="ListSource.cs" />
-    <Compile Include="MTD.cs" />
+    <Compile Include="DataLoadingDialogViewController.cs" />
     <Compile Include="CustomElement.cs" />
     <Compile Include="CustomListCellXIB.designer.cs">
       <DependentUpon>CustomListCell.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomListCell.cs" />
     <Compile Include="CustomListCellXIBless.cs" />
-    <Compile Include="..\UITableViewCell.Customization.DataLoading\SectionalInformationDataFactory.cs">
-      <Link>Data.cs</Link>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
