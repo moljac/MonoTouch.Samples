@@ -1,17 +1,19 @@
 using System;
 using MonoTouch.UIKit;
 
-using MonoTouch.Dialog;
 using System.Collections.Generic;
-using Xsample.iFly;
 using System.Drawing;
 
-namespace TabBar {
-	public class TabBarController : UITabBarController {
+using MonoTouch.Dialog;
+
+namespace UITabBarControllerWithTabContainingDialogViewController
+{
+	public class UITabBarControllerWithTabContainingDialogViewController : UITabBarController
+	{
 
 		UIViewController tab1, tab2, tab3;
 
-		public TabBarController ()
+		public UITabBarControllerWithTabContainingDialogViewController ()
 		{
 			tab1 = new UIViewController ();
 			tab1.Title = "Green";
@@ -45,7 +47,8 @@ namespace TabBar {
 			tab4.Title = "DialogViewController";
 
 			// Sample Data
-			List<SectionalInformation> list_si = Data.SectionalInformation (); 
+			List<SectionalInformation> list_si;
+			list_si = SectionalInformationDataFactory.SectionalInformation (); 
 
 			foreach (SectionalInformation si  in list_si)
 			{

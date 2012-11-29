@@ -3,9 +3,9 @@ using MonoTouch.UIKit;
 
 
 
-namespace TabBar 
+namespace UITabBarControllerWithTabBarOnTop 
 {
-	public class TabBarController : UITabBarController 
+	public class UITabBarControllerWithTabBarOnTop : UITabBarController 
 	{
 		//CUSTOM TAB BAR
 		static readonly float TAB_BAR_HEIGHT = 44;
@@ -14,7 +14,7 @@ namespace TabBar
 		UIViewController tab1, tab2, tab3;
 
 
-		public TabBarController ()
+		public UITabBarControllerWithTabBarOnTop ()
 		{
 			//-----------------------CUSTOM TAB BAR-------------------------------------------------
 			rect = new System.Drawing.RectangleF(0,0,this.View.Bounds.Size.Width,TAB_BAR_HEIGHT);

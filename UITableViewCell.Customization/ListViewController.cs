@@ -5,7 +5,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace TEST
+namespace MonoMobile.Dialog
 {
 	public partial class ListViewController : UITableViewController
 	{
@@ -38,7 +38,7 @@ namespace TEST
 			//
 			// e.g. myOutlet.Dispose (); myOutlet = null;
 			
-			ReleaseDesignerOutlets ();
+			//ReleaseDesignerOutlets ();
 		}
 		
 		public override bool ShouldAutorotateToInterfaceOrientation (UIInterfaceOrientation toInterfaceOrientation)

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Xsample.iFly
+namespace UITabBarControllerWithTabContainingDialogViewController
 {
-	public partial class Data
+	public partial class SectionalInformationDataFactory
 	{
 		public static List<string> Sample = new List<string>()
 		{

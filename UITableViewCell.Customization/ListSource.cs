@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
 
-namespace TEST
+namespace MonoMobile.Dialog
 {
 	public class ListSource : UITableViewSource
 	{

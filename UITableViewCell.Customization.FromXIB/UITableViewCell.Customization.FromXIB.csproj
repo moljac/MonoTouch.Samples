@@ -87,9 +87,6 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\UITableViewCell.Customization.DataLoading\Data.cs">
-      <Link>Data.cs</Link>
-    </Compile>
     <Compile Include="..\UITableViewCell.Customization.DataLoading\SectionalInformation.cs">
       <Link>SectionalInformation.cs</Link>
     </Compile>
@@ -107,6 +104,9 @@
     </Compile>
     <Compile Include="CustomListCell.cs" />
     <Compile Include="CustomListCellXIBless.cs" />
+    <Compile Include="..\UITableViewCell.Customization.DataLoading\SectionalInformationDataFactory.cs">
+      <Link>Data.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

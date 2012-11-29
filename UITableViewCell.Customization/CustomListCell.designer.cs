@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace TEST
+namespace MonoMobile.Dialog
 {
 	[Register ("CustomListCell")]
 	partial class CustomListCell

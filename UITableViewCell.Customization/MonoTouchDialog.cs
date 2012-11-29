@@ -9,9 +9,9 @@ using MonoTouch.Dialog;
 
 namespace TEST
 {
-	public partial class MTD : DialogViewController
+	public partial class SectionalInformationDialogViewController : DialogViewController
 	{
-		public MTD () : base (UITableViewStyle.Plain, null)
+		public SectionalInformationDialogViewController () : base (UITableViewStyle.Plain, null)
 		{
 
 			SectionalInformationElement sie = new SectionalInformationElement();

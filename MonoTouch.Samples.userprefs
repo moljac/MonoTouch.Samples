@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TabBarOnTopDVC/DVC.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITableViewCell.Customization.DataLoading/SectionalInformation.cs">
     <Files>
-      <File FileName="TabBarOnTopDVC/AppDelegate.cs" Line="34" Column="35" />
-      <File FileName="TabBarOnTopDVC/TabBarController.cs" Line="16" Column="4" />
-      <File FileName="TabBarOnTopDVC/DVC.cs" Line="12" Column="2" />
+      <File FileName="UITableViewCell.Customization.FromXIB/MTD.cs" Line="20" Column="25" />
+      <File FileName="UITableViewCell.Customization.DataLoading/SectionalInformation.cs" Line="6" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

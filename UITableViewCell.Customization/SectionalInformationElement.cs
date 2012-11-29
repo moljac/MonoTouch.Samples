@@ -5,6 +5,8 @@ using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
 
+using MonoMobile.Dialog;
+
 namespace TEST
 {
 	public class SectionalInformationElement : Element

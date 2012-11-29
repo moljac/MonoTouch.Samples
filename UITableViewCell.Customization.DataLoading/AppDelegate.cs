@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace TabBar
+namespace UITabBarControllerWithTabContainingDialogViewController
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
@@ -15,7 +15,7 @@ namespace TabBar
 	{
 		// class-level declarations
 		UIWindow window;
-		TabBarController tabBarController;
+		UITabBarControllerWithTabContainingDialogViewController tabBarController;
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -29,7 +29,7 @@ namespace TabBar
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			
-			tabBarController = new TabBarController();
+			tabBarController = new UITabBarControllerWithTabContainingDialogViewController();
 
 			// If you have defined a view, add it here:
 			window.RootViewController = tabBarController;

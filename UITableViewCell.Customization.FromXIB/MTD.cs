@@ -23,7 +23,8 @@ namespace TEST
 			List<CustomElement<SectionalInformation, CustomListCell>> data_ui;
 			data_ui = new List<CustomElement<SectionalInformation, CustomListCell>>();
 
-			List<SectionalInformation> data_sectional_info = Data.SectionalInformation ();
+			List<SectionalInformation> data_sectional_info;
+			data_sectional_info = SectionalInformationDataFactory.SectionalInformation ();
 
 			foreach (SectionalInformation si in data_sectional_info) 
 			{
