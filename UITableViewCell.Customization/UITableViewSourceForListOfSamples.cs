@@ -5,8 +5,9 @@ using MonoTouch.UIKit;
 using System.Collections.Generic;
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
+using MonoMobile.Dialog;
 
-namespace MonoMobile.Dialog
+namespace UITableViewCellCustomization
 {
 	public class UITableViewSourceForListOfSamples : UITableViewSource
 	{

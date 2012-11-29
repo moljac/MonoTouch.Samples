@@ -95,16 +95,18 @@
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ListViewController.cs" />
-    <Compile Include="ListViewController.designer.cs">
-      <DependentUpon>ListViewController.cs</DependentUpon>
+    <Compile Include="UITableViewControllerForListOfSamples.cs" />
+    <Compile Include="UITableViewControllerForListOfSamples.designer.cs">
+      <DependentUpon>UITableViewControllerForListOfSamples.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListSource.cs" />
+    <Compile Include="UITableViewSourceSampleList.cs" />
     <Compile Include="DataLoadingDialogViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <InterfaceDefinition Include="ListViewController.xib" />
+    <InterfaceDefinition Include="UITableViewControllerForListOfSamples.xib">
+      <DependentUpon>UITableViewControllerForListOfSamples.cs</DependentUpon>
+    </InterfaceDefinition>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\MonoMobile.Dialog\MonoMobile.Dialog.Touch\MonoMobile.Dialog.Touch.csproj">

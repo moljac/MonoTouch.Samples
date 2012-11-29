@@ -31,7 +31,7 @@ namespace UITableViewCellCustomizationFromXIB
 			// If you have defined a view, add it here:
 			// window.AddSubview (navigationController.View);
 
-			//window.RootViewController = new ListViewController();
+			//window.RootViewController = new UITableViewControllerForListOfSamples();
 			window.RootViewController = new DataLoadingDialogViewController();
 
 			// make the window visible
