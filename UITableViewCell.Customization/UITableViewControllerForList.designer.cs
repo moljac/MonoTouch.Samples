@@ -9,7 +9,7 @@ using MonoTouch.Foundation;
 namespace UITableViewCellCustomization
 {
 	[Register ("UITableViewControllerForList")]
-	partial class ListViewController
+	partial class UITableViewControllerForList
 	{
 		void ReleaseDesignerOutlets ()
 		{

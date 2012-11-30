@@ -25,6 +25,7 @@ namespace UITableViewCellCustomization
 
 		}
 
+		// Mimic MonoMobile[Touch].Element!
 		public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
 		{
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
@@ -32,14 +33,15 @@ namespace UITableViewCellCustomization
 			// Reuse a cell if one exists
 			UITableViewCellCustom cell = tableView.DequeueReusableCell ("ColorCell") as UITableViewCellCustom;
 			
-			if (cell == null) {   
-				// We have to allocate a cell
-				var views = NSBundle.MainBundle.LoadNib ("UITableViewCellCustom", tableView, null);
+			if (cell == null) 
+			{   
+				// Allocate a cell
+				NSArray views = NSBundle.MainBundle.LoadNib ("UITableViewControllerForList", tableView, null);
 				cell = Runtime.GetNSObject (views.ValueAt (0)) as UITableViewCellCustom;
 			}
 			
 			// This cell has been used before, so we need to update it's data
-			cell.UpdateWithData (_testData [indexPath.Row]);   
+			//cell.UpdateWithData (_testData [indexPath.Row]);   
 			
 			return cell;
 		

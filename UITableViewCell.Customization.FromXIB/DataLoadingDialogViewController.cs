@@ -19,11 +19,11 @@ namespace UITableViewCellCustomizationFromXIB
 			: base(UITableViewStyle.Plain, null)
 		{
 
-			ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative> sie;
-			sie = new ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative> ();
+			ElementCustomDerivedGeneric<object, UITableViewCell> ecdg1;
+			ecdg1 = new ElementCustomDerivedGeneric<object, UITableViewCell> ();
 
-			List<ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative>> data_ui;
-			data_ui = new List<ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative>>();
+			List<ElementCustomDerivedGeneric<object, UITableViewCell>> data_ui;
+			data_ui = new List<ElementCustomDerivedGeneric<object, UITableViewCell>>();
 
 			List<SectionalInformation> data_sectional_info;
 			data_sectional_info = SectionalInformationDataFactory.SectionalInformation ();
@@ -31,23 +31,25 @@ namespace UITableViewCellCustomizationFromXIB
 			foreach (SectionalInformation si in data_sectional_info) 
 			{
 
-				ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative> ce;
-				ce = new ElementCustomGeneric<SectionalInformation, UITableViewCellCustomAlternative>();
+				ElementCustomDerivedGeneric<object, UITableViewCell> ecdg2;
+				ecdg2 = new ElementCustomDerivedGeneric<object, UITableViewCell>();
 
-				ce.BusinessObject = si;
-				ce.PresentationObjectCell = null; // if null will be extracted from xib hahahahahahaha
-				ce.ParentTableView = this.TableView;
+				ecdg2.BusinessObject = si;
+				// Trick: 
+				// if null will be extracted from xib hahahahahahaha
+				ecdg2.PresentationObjectCell = null; 
+				ecdg2.ParentTableView = this.TableView;
 
 				//UITableViewCellCustom clc = ce.PresentationObjectCell as UITableViewCellCustom;
 				// clc.UpdateData(si.Name, si.Elapsed.ToString(), si.Delete);
 
 				UITableViewCellCustomListXIBless clcxl = new UITableViewCellCustomListXIBless();
 
-				ce.UpdateData += delegate(UITableViewCell c)
+				ecdg2.UpdateData += delegate(UITableViewCell c)
 				{
 				};
 
-				data_ui.Add(ce);
+				data_ui.Add(ecdg2);
 			}
 
 
