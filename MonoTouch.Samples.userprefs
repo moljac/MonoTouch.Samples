@@ -2,7 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.Workbench ActiveDocument="UITableViewCellCustomTestVersionInitial/DialogViewControllerDemoListViewCustomCell.cs">
     <Files>
-      <File FileName="UITableViewCellCustomTestVersionInitial/DialogViewControllerDemoListViewCustomCell.cs" Line="31" Column="11" />
+      <File FileName="UITableViewCellCustomTestVersionInitial/DialogViewControllerDemoListViewCustomCell.cs" Line="28" Column="5" />
+      <File FileName="UITableViewCellCustomTestVersionInitial/ElementCustom/ElementDerivedCustom.cs" Line="57" Column="1" />
+      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" Line="13" Column="1" />
+      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerivedGeneric.cs" Line="77" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -11,7 +14,7 @@
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" line="15" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" line="20" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCell.Customization/UITableViewSourceForListOfSamples.cs" line="34" />
-      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" line="58" />
+      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" line="65" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs" line="21" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ListSource.cs" line="41" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ListSource.cs" line="18" />

@@ -5,16 +5,16 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace TEST
+namespace MonoMobile.Dialog
 {
-	public partial class CustomListCell : UITableViewCell
+	public partial class UITableViewCellCustomForList : UITableViewCell
 	{  
 
-		public CustomListCell () : base()
+		public UITableViewCellCustomForList () : base()
 		{
 		}
 		
-		public CustomListCell (IntPtr handle) : base(handle)
+		public UITableViewCellCustomForList (IntPtr handle) : base(handle)
 		{
 		}
 

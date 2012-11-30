@@ -95,17 +95,24 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-
     <Compile Include="DialogViewControllerDemoListViewCustomCell.cs" />
     <Compile Include="ElementCustom\ElementDerivedCustom.cs" />
-    <Compile Include="ElementCustom\CustomListCell.cs" />
-    <Compile Include="ElementCustom\CustomListCell.designer.cs">
-      <DependentUpon>CustomListCell.cs</DependentUpon>
+    <Compile Include="ElementCustom\UITableViewCellCustomForList.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustomForList.designer.cs">
+      <DependentUpon>UITableViewCellCustomForList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\UITableViewCellCustomForList.designer %28copy%29.cs">
+      <DependentUpon>UITableViewCellCustomForList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\UITableViewCellCustomForList %28copy%29.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustomForList.designer %28another copy%29.cs">
+      <DependentUpon>UITableViewCellCustomForList.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <InterfaceDefinition Include="ElementCustom\CustomListCell.xib" />
+    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomForList.xib" />
+    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomForListHuzDaBoss.xib" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NotUsedBuildActionNone\" />

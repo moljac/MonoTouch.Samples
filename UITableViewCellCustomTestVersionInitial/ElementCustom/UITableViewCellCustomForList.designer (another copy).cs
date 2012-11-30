@@ -6,10 +6,10 @@
 //
 using MonoTouch.Foundation;
 
-namespace TEST
+namespace MonoMobile.Dialog
 {
-	[Register ("CustomListCell")]
-	partial class CustomListCell
+	[Register ("UITableViewCellCustomForList")]
+	partial class UITableViewCellCustomForList
 	{
 		[Outlet]
 		MonoTouch.UIKit.UILabel lblName { get; set; }
