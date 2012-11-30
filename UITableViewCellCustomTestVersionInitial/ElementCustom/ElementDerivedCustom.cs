@@ -4,7 +4,7 @@ using MonoTouch.Dialog;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
-using TEST.ElementCustom;
+
 
 namespace MonoMobile.Dialog
 {
@@ -14,8 +14,9 @@ namespace MonoMobile.Dialog
 		{
 		}
 
-		public ElementDerivedCustom (string filename_xib) : base (null)
+		public ElementDerivedCustom (string fnx) : base (null)
 		{		
+			file_name_xib = fnx;
 		}
 
 		string file_name_xib;
@@ -44,12 +45,20 @@ namespace MonoMobile.Dialog
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 			
 			// Reuse a cell if one exists
-			cell_custom = tv.DequeueReusableCell("UITableViewCellCustomHuzDaBoss") as UITableViewCellCustom;
-			
-			this.CellFromXib(file_name_xib, tv);
+			cell_custom = tv.DequeueReusableCell ("UITableViewCellCustom") as UITableViewCellCustom;
+
 			if (CellCustom == null) 
 			{   
-				CellCustom = this.CellFromXib(file_name_xib, tv);
+				if ("" == file_name_xib || null == file_name_xib ) 
+				{
+					CellCustom = this.CellFromXib ("UITableViewCellCustomForList", tv)
+										as UITableViewCellCustom;
+				} 
+				else 
+				{			
+					CellCustom = this.CellFromXib (file_name_xib, tv)
+										as UITableViewCellCustom;
+				}
 			}
 
 			// This cell has been used before, so we need to update it's data
@@ -63,12 +72,12 @@ namespace MonoMobile.Dialog
 			
 		}
 
-		public UITableViewCellCustom CellFromXib (string file_name_xib, UITableView tv)
+		public UITableViewCell CellFromXib (string file_name_xib, UITableView tv)
 		{
 			// allocate/load a cell from XIB
-			NSArray views = NSBundle.MainBundle.LoadNib ("UITableViewCellCustomHuzDaBoss", tv, null);
-			UITableViewCellCustom cc;
-			cc = Runtime.GetNSObject(views.ValueAt(0)) as UITableViewCellCustom;
+			NSArray views = NSBundle.MainBundle.LoadNib (file_name_xib, tv, null);
+			UITableViewCell cc;
+			cc = Runtime.GetNSObject(views.ValueAt(0)) as UITableViewCell;
 			
 			return cc;
 		}

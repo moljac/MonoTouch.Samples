@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UITableViewCellCustomTestVersionInitial/DialogViewControllerDemoListViewCustomCell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITableViewCellCustomTestVersionInitial/ElementCustom/ElementDerivedCustom.cs">
     <Files>
-      <File FileName="UITableViewCellCustomTestVersionInitial/DialogViewControllerDemoListViewCustomCell.cs" Line="28" Column="5" />
-      <File FileName="UITableViewCellCustomTestVersionInitial/ElementCustom/ElementDerivedCustom.cs" Line="57" Column="1" />
-      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" Line="13" Column="1" />
-      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerivedGeneric.cs" Line="77" Column="1" />
+      <File FileName="UITableViewCellCustomTestVersionInitial/ElementCustom/ElementDerivedCustom.cs" Line="65" Column="1" />
+      <File FileName="UITableViewCellCustomTestVersionInitial/ElementCustom/UITableViewCellCustomForList.cs" Line="10" Column="75" />
+      <File FileName="UITableViewCellCustomTestVersionInitial/ElementCustom/UITableViewCellCustomHuzDaBoss.cs" Line="17" Column="64" />
+      <File FileName="UITableViewCellCustomTestVersionInitial/ElementCustom/UITableViewCellCustom.cs" Line="14" Column="55" />
+      <File FileName="UITableViewCellCustomTestVersionInitial/DialogViewControllerDemoListViewCustomCell.cs" Line="45" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -18,6 +19,9 @@
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs" line="21" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ListSource.cs" line="41" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ListSource.cs" line="18" />
+      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ElementCustom/ElementDerivedCustom.cs" line="65" />
+      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ElementCustom/ElementDerivedCustom.cs" line="65" />
+      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ElementCustom/ElementDerivedCustom.cs" line="65" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -7,7 +7,7 @@ using MonoTouch.UIKit;
 
 namespace MonoMobile.Dialog
 {
-	public partial class UITableViewCellCustomForList : UITableViewCell
+	public partial class UITableViewCellCustomForList : UITableViewCellCustom
 	{  
 
 		public UITableViewCellCustomForList () : base()

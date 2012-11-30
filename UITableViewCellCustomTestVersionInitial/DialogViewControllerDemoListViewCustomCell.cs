@@ -18,7 +18,7 @@ namespace UITableViewCellCustomTestVersionInitial
 
 			ElementDerivedCustom edc1 = new ElementDerivedCustom();
 			ElementDerivedCustom edc2 = new ElementDerivedCustom("UITableViewCellCustomHuzDaBoss");
-			ElementDerivedCustom edc3 = new ElementDerivedCustom();
+			ElementDerivedCustom edc3 = new ElementDerivedCustom("UITableViewCellCustomForList");
 			
 
 			Root = new RootElement ("MTD") 
@@ -42,6 +42,8 @@ namespace UITableViewCellCustomTestVersionInitial
 				, new ElementDerivedCustom()
 				, edc2
 				, edc3
+							, new ElementDerivedCustom("UITableViewCellCustomForList")
+							, new ElementDerivedCustom("UITableViewCellCustomHuzDaBoss")
 				},
 			};
 		}

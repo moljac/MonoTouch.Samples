@@ -7,7 +7,7 @@ using MonoTouch.UIKit;
 
 namespace MonoMobile.Dialog
 {
-	public partial class UITableViewCellCustomHuzDaBoss : UITableViewCell
+	public partial class UITableViewCellCustomHuzDaBoss : UITableViewCellCustom
 	{  
 
 		public UITableViewCellCustomHuzDaBoss () : base()
