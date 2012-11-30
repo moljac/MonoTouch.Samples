@@ -8,7 +8,7 @@ using MonoTouch.Foundation;
 
 namespace MonoMobile.Dialog
 {
-	[Register ("UITableViewCellCustomForList")]
+	[Register("UITableViewCellCustomForList")]
 	partial class UITableViewCellCustomForList
 	{
 		[Outlet]

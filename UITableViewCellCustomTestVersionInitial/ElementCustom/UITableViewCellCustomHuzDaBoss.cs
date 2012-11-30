@@ -7,24 +7,19 @@ using MonoTouch.UIKit;
 
 namespace MonoMobile.Dialog
 {
-	public partial class UITableViewCellCustomForList : UITableViewCell
+	public partial class UITableViewCellCustomHuzDaBoss : UITableViewCell
 	{  
 
-		public UITableViewCellCustomForList () : base()
+		public UITableViewCellCustomHuzDaBoss () : base()
 		{
 		}
 		
-		public UITableViewCellCustomForList (IntPtr handle) : base(handle)
+		public UITableViewCellCustomHuzDaBoss (IntPtr handle) : base(handle)
 		{
 		}
 
 		// TODO: refactor to be more generic
-		public void UpdateWithData (string name, DateTime time)
-		{  
-			lblDate.Text = time.ToString();
-			lblName.Text = name;
-			btnDelete.Hidden = false;
-		}
+
 
 
 	}

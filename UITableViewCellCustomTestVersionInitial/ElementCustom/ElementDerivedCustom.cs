@@ -4,6 +4,7 @@ using MonoTouch.Dialog;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
+using TEST.ElementCustom;
 
 namespace MonoMobile.Dialog
 {
@@ -14,9 +15,7 @@ namespace MonoMobile.Dialog
 		}
 
 		public ElementDerivedCustom (string filename_xib) : base (null)
-		{
-		
-		
+		{		
 		}
 
 		string file_name_xib;
@@ -28,9 +27,10 @@ namespace MonoMobile.Dialog
 				file_name_xib = value;
 			}
 		}
-		
-		UITableViewCellCustomForList cell_custom;
-		public UITableViewCellCustomForList CellCustom {
+
+		UITableViewCellCustom cell_custom;
+		public UITableViewCellCustom CellCustom
+		{
 			get {
 				return cell_custom;
 			}
@@ -44,7 +44,7 @@ namespace MonoMobile.Dialog
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 			
 			// Reuse a cell if one exists
-			cell_custom = tv.DequeueReusableCell ("UITableViewCellCustomForList") as UITableViewCellCustomForList;
+			cell_custom = tv.DequeueReusableCell("UITableViewCellCustomHuzDaBoss") as UITableViewCellCustom;
 			
 			this.CellFromXib(file_name_xib, tv);
 			if (CellCustom == null) 
@@ -63,12 +63,12 @@ namespace MonoMobile.Dialog
 			
 		}
 
-		public UITableViewCellCustomForList CellFromXib (string file_name_xib, UITableView tv)
+		public UITableViewCellCustom CellFromXib (string file_name_xib, UITableView tv)
 		{
 			// allocate/load a cell from XIB
-			NSArray views = NSBundle.MainBundle.LoadNib ("UITableViewCellCustomForList", tv, null);
-			UITableViewCellCustomForList cc;
-			cc = Runtime.GetNSObject (views.ValueAt (0)) as UITableViewCellCustomForList;
+			NSArray views = NSBundle.MainBundle.LoadNib ("UITableViewCellCustomHuzDaBoss", tv, null);
+			UITableViewCellCustom cc;
+			cc = Runtime.GetNSObject(views.ValueAt(0)) as UITableViewCellCustom;
 			
 			return cc;
 		}

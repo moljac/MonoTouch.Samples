@@ -13,8 +13,9 @@ namespace MonoMobile.Dialog
 		public UITableViewCellCustomForList () : base()
 		{
 		}
-		
-		public UITableViewCellCustomForList (IntPtr handle) : base(handle)
+
+		public UITableViewCellCustomForList(IntPtr handle)
+			: base(handle)
 		{
 		}
 

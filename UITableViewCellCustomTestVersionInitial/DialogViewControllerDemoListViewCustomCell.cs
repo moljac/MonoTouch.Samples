@@ -17,7 +17,7 @@ namespace UITableViewCellCustomTestVersionInitial
 		{
 
 			ElementDerivedCustom edc1 = new ElementDerivedCustom();
-			ElementDerivedCustom edc2 = new ElementDerivedCustom("UITableViewCellCustomForList");
+			ElementDerivedCustom edc2 = new ElementDerivedCustom("UITableViewCellCustomHuzDaBoss");
 			ElementDerivedCustom edc3 = new ElementDerivedCustom();
 			
 
