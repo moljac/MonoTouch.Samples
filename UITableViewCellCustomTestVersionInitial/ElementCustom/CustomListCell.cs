@@ -18,10 +18,11 @@ namespace TEST
 		{
 		}
 
+		// TODO: refactor to be more generic
 		public void UpdateWithData (string name, DateTime time)
 		{  
-			lblDate = time;
-			lblName = name;
+			lblDate.Text = time.ToString();
+			lblName.Text = name;
 			btnDelete.Hidden = false;
 		}
 

@@ -9,12 +9,12 @@ using MonoTouch.Dialog;
 
 namespace TEST
 {
-	public partial class MTD : DialogViewController
+	public partial class DialogViewControllerDemoListViewCustomCell : DialogViewController
 	{
-		public MTD () : base (UITableViewStyle.Plain, null)
+		public DialogViewControllerDemoListViewCustomCell () : base (UITableViewStyle.Plain, null)
 		{
 
-			SectionalInformationElement sie = new SectionalInformationElement();
+			ElementDerivedCustom edc1 = new ElementDerivedCustom();
 
 
 			Root = new RootElement ("MTD") 
@@ -27,7 +27,8 @@ namespace TEST
 				},
 				new Section ("Second Section")
 				{
-					new SectionalInformationElement()
+				  new ElementDerivedCustom()
+				, edc1
 				},
 			};
 		}

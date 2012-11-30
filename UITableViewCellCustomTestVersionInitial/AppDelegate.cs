@@ -32,7 +32,7 @@ namespace TEST
 			// window.AddSubview (navigationController.View);
 
 			//window.RootViewController = new ListViewController();
-			window.RootViewController = new MTD();
+			window.RootViewController = new DialogViewControllerDemoListViewCustomCell();
 
 			// make the window visible
 			window.MakeKeyAndVisible ();

@@ -7,9 +7,9 @@ using MonoTouch.ObjCRuntime;
 
 namespace TEST
 {
-	public class SectionalInformationElement : Element
+	public class ElementDerivedCustom : Element
 	{
-		public SectionalInformationElement () : base (null)
+		public ElementDerivedCustom () : base (null)
 		{
 		}
 
@@ -28,7 +28,11 @@ namespace TEST
 			}
 
 			// This cell has been used before, so we need to update it's data
-			//cell.UpdateWithData (_testData [indexPath.Row]);   
+			cell.UpdateWithData
+				(
+					"name" + DateTime.Now.Millisecond.ToString()
+					, DateTime.Now 
+				);   
 			
 			return cell;
 			

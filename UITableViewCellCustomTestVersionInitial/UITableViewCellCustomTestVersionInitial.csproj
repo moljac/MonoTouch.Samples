@@ -85,25 +85,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
+    <None Include="NotUsedBuildActionNone\ListSource.cs" />
+    <None Include="NotUsedBuildActionNone\ListViewController.cs" />
+    <None Include="NotUsedBuildActionNone\ListViewController.designer.cs">
+      <DependentUpon>ListViewController.cs</DependentUpon>
+    </None>
+    <None Include="NotUsedBuildActionNone\ListViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ListViewController.cs" />
-    <Compile Include="ListViewController.designer.cs">
-      <DependentUpon>ListViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListSource.cs" />
-    <Compile Include="CustomListCell.cs" />
-    <Compile Include="CustomListCell.designer.cs">
+
+    <Compile Include="DialogViewControllerDemoListViewCustomCell.cs" />
+    <Compile Include="ElementCustom\ElementDerivedCustom.cs" />
+    <Compile Include="ElementCustom\CustomListCell.cs" />
+    <Compile Include="ElementCustom\CustomListCell.designer.cs">
       <DependentUpon>CustomListCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="MTD.cs" />
-    <Compile Include="SectionalInformationElement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <InterfaceDefinition Include="ListViewController.xib" />
-    <InterfaceDefinition Include="CustomListCell.xib" />
+    <InterfaceDefinition Include="ElementCustom\CustomListCell.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NotUsedBuildActionNone\" />
+    <Folder Include="ElementCustom\" />
   </ItemGroup>
 </Project>
