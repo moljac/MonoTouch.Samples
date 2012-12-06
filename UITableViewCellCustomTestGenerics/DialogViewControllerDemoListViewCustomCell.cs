@@ -16,11 +16,15 @@ namespace UITableViewCellCustomTestVersionInitial
 		public DialogViewControllerDemoListViewCustomCell () : base (UITableViewStyle.Plain, null)
 		{
 
-			ElementDerivedCustom edc1 = new ElementDerivedCustom();
-			ElementDerivedCustom edc2 = new ElementDerivedCustom("UITableViewCellCustomHuzDaBoss");
-			ElementDerivedCustom edc3 = new ElementDerivedCustom("UITableViewCellCustomForList");
+			ElementDerivedCustom<UITableViewCellPerson, Person> edc1;
+			edc1 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
 			
-
+			ElementDerivedCustom<UITableViewCellPerson, Person> edc2;
+			edc2 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
+			
+			ElementDerivedCustom<UITableViewCellPerson, Person> edc3;
+			edc3 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
+			
 			Root = new RootElement ("MTD") 
 			{
 				new Section ("First Section"){
@@ -37,13 +41,28 @@ namespace UITableViewCellCustomTestVersionInitial
 				},
 				new Section ("Second Section")
 				{
-				  new ElementDerivedCustom()
+				  new ElementDerivedCustom<UITableViewCellPerson, Person>()
+				  {
+				    BusinessObject = new Person()
+				    		{
+				    		  NameLast = "Mokeee"
+				    		, NameFirst = "Mel"
+				    		, DateOfBirth = DateTime.Now
+				    		}
+				  }
 				, edc1
-				, new ElementDerivedCustom()
+				, new ElementDerivedCustom<UITableViewCellPerson, Person>()
+					{
+						BusinessObject = new Person()
+						{
+							NameLast = "Ikeeee"
+							, NameFirst = "Guru"
+							, DateOfBirth = DateTime.Now.Subtract(new TimeSpan(4000,0,0,0,0))
+						}
+					}
 				, edc2
 				, edc3
-							, new ElementDerivedCustom("UITableViewCellCustomForList")
-							, new ElementDerivedCustom("UITableViewCellCustomHuzDaBoss")
+
 				},
 			};
 		}

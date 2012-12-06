@@ -62,6 +62,12 @@ namespace MonoMobile.Dialog
 			}
 
 			// This cell has been used before, so we need to update it's data
+			// TODO: genricize
+			// 		this is not "generic enough"
+			// 		needed: 
+			//			delegate + event
+			//			generc for BusinessObject-Type and UITableViewCell-Type
+			// further implementation in UITableViewCellCustomTestVersionInitial
 			CellCustom.UpdateWithData
 				(
 					"name" + DateTime.Now.Millisecond.ToString()

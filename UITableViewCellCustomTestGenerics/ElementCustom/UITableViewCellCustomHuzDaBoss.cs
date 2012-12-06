@@ -20,7 +20,9 @@ namespace MonoMobile.Dialog
 
 		// TODO: refactor to be more generic
 
-
+		public override void UpdateWithData<BusinessObjectType>(BusinessObjectType bo_object)
+		{
+		}
 
 	}
 }

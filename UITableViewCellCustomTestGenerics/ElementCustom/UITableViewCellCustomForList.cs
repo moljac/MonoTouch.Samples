@@ -20,14 +20,18 @@ namespace MonoMobile.Dialog
 		}
 
 		// TODO: refactor to be more generic
-		public void UpdateWithData (string name, DateTime time)
+		public void UpdateWithData(string name)
 		{  
-			lblDate.Text = time.ToString();
+			lblDate.Text = DateTime.Now.Millisecond.ToString();
 			lblName.Text = name;
 			btnDelete.Hidden = false;
 		}
 
 
-	}
+		public override void UpdateWithData<BusinessObjectType>(BusinessObjectType bo_object)
+		{
+		}
+
+		}
 }
 

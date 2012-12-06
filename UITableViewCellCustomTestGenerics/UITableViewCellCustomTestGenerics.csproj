@@ -106,6 +106,12 @@
     <Compile Include="ElementCustom\UITableViewCellCustomForList.designer.cs">
       <DependentUpon>UITableViewCellCustomForList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ElementCustom\ElementDerivedCustom.Update.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="UITableViewCellPerson.designer.cs">
+      <DependentUpon>UITableViewCellPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITableViewCellPerson.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -114,6 +120,9 @@
     </InterfaceDefinition>
     <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomHuzDaBoss.xib">
       <DependentUpon>UITableViewCellCustomHuzDaBoss.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="UITableViewCellPerson.xib">
+      <DependentUpon>UITableViewCellPerson.cs</DependentUpon>
     </InterfaceDefinition>
   </ItemGroup>
   <ItemGroup />

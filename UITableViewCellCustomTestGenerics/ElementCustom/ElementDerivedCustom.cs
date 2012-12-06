@@ -8,7 +8,19 @@ using MonoTouch.ObjCRuntime;
 
 namespace MonoMobile.Dialog
 {
-	public class ElementDerivedCustom : Element
+	public partial class 
+		ElementDerivedCustom<UITableViewCellType, BusinessObjectType> 
+		:
+		MonoTouch.Dialog.Element
+		//MonoMobile.Dialog.Element
+		where 
+			UITableViewCellType 
+			: 
+			// UIView OK but need more strict
+			// MonoTouch.UIKit.UITableViewCell
+			// event stricter - use our custom cell whic has Update Function
+			MonoMobile.Dialog.UITableViewCellCustom
+			// TODO: investigate if UIView could be instead of UITableViewCell
 	{
 		public ElementDerivedCustom () : base (null)
 		{
@@ -29,8 +41,20 @@ namespace MonoMobile.Dialog
 			}
 		}
 
-		UITableViewCellCustom cell_custom;
-		public UITableViewCellCustom CellCustom
+//		UITableViewCellCustom cell_custom;
+//		public UITableViewCellCustom CellCustom
+//		{
+//			get {
+//				return cell_custom;
+//			}
+//			set {
+//				cell_custom = value;
+//			}
+//		}
+		
+
+		UITableViewCellType cell_custom;
+		public UITableViewCellType CellCustom
 		{
 			get {
 				return cell_custom;
@@ -40,33 +64,47 @@ namespace MonoMobile.Dialog
 			}
 		}
 		
+		/// <summary>
+		/// The business_object_type.
+		///  BO logic type = Tag in WindowsFoms or similar! "Kinda databinding"
+		/// </summary>
+		BusinessObjectType business_object_type;
+		public BusinessObjectType BusinessObject
+		{
+			get {
+				return business_object_type;
+			}
+			set {
+				business_object_type = value;
+			}
+		}
+		
 		public override UITableViewCell GetCell (UITableView tv)
 		{
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 			
 			// Reuse a cell if one exists
-			cell_custom = tv.DequeueReusableCell ("UITableViewCellCustom") as UITableViewCellCustom;
+			// 
+			// <string key="IBUIReuseIdentifier">UITableViewCellCustom</string>
+			NSString memory_identifier = new NSString("UITableViewCellCustom");
+			cell_custom = tv.DequeueReusableCell(memory_identifier) as UITableViewCellType;
 
 			if (CellCustom == null) 
 			{   
 				if ("" == file_name_xib || null == file_name_xib ) 
 				{
-					CellCustom = this.CellFromXib ("UITableViewCellCustomForList", tv)
-										as UITableViewCellCustom;
+					CellCustom = this.CellFromXib ("UITableViewCellPerson", tv)
+										as UITableViewCellType;
 				} 
 				else 
 				{			
 					CellCustom = this.CellFromXib (file_name_xib, tv)
-										as UITableViewCellCustom;
+										as UITableViewCellType;
 				}
 			}
 
 			// This cell has been used before, so we need to update it's data
-			CellCustom.UpdateWithData
-				(
-					"name" + DateTime.Now.Millisecond.ToString()
-					, DateTime.Now 
-				);   
+			CellCustom.UpdateWithData(this.BusinessObject);
 			
 			return CellCustom;
 			

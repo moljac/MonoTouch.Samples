@@ -5,7 +5,9 @@ using System.Text;
 
 namespace MonoMobile.Dialog
 {
-	public class UITableViewCellCustom : MonoTouch.UIKit.UITableViewCell
+	public abstract class UITableViewCellCustom
+		: 
+		MonoTouch.UIKit.UITableViewCell
 	{
 		public UITableViewCellCustom () : base()
 		{
@@ -15,9 +17,7 @@ namespace MonoMobile.Dialog
 		{
 		}
 		
-		public virtual void UpdateWithData(string name, DateTime time)
-		{
+		public abstract void UpdateWithData<BusinessObjectType>(BusinessObjectType bo_object);
 
-		}
 	}
 }
