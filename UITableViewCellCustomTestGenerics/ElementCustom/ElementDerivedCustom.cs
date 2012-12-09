@@ -18,8 +18,8 @@ namespace MonoMobile.Dialog
 			: 
 			// UIView OK but need more strict
 			// MonoTouch.UIKit.UITableViewCell
-			// event stricter - use our custom cell whic has Update Function
-			MonoMobile.Dialog.UITableViewCellCustom
+			// event stricter - use our custom cell which has Update Function
+			MonoMobile.Dialog.UITableViewCellCustom<BusinessObjectType>
 			// TODO: investigate if UIView could be instead of UITableViewCell
 	{
 		public ElementDerivedCustom () : base (null)
@@ -41,20 +41,8 @@ namespace MonoMobile.Dialog
 			}
 		}
 
-//		UITableViewCellCustom cell_custom;
-//		public UITableViewCellCustom CellCustom
-//		{
-//			get {
-//				return cell_custom;
-//			}
-//			set {
-//				cell_custom = value;
-//			}
-//		}
-		
-
-		UITableViewCellType cell_custom;
-		public UITableViewCellType CellCustom
+		UITableViewCellCustom<BusinessObjectType> cell_custom;
+		public UITableViewCellCustom<BusinessObjectType> CellCustom
 		{
 			get {
 				return cell_custom;
@@ -63,6 +51,7 @@ namespace MonoMobile.Dialog
 				cell_custom = value;
 			}
 		}
+		
 		
 		/// <summary>
 		/// The business_object_type.
@@ -104,7 +93,7 @@ namespace MonoMobile.Dialog
 			}
 
 			// This cell has been used before, so we need to update it's data
-			CellCustom.UpdateWithData(this.BusinessObject);
+			CellCustom.DataBind(business_object_type);
 			
 			return CellCustom;
 			

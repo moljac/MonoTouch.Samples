@@ -7,7 +7,7 @@ using MonoTouch.UIKit;
 
 namespace MonoMobile.Dialog
 {
-	public partial class UITableViewCellCustomHuzDaBoss : UITableViewCellCustom
+	public partial class UITableViewCellCustomHuzDaBoss : UITableViewCellCustom<string>
 	{  
 
 		public UITableViewCellCustomHuzDaBoss () : base()
@@ -17,13 +17,6 @@ namespace MonoMobile.Dialog
 		public UITableViewCellCustomHuzDaBoss (IntPtr handle) : base(handle)
 		{
 		}
-
-		// TODO: refactor to be more generic
-
-		public override void UpdateWithData<BusinessObjectType>(BusinessObjectType bo_object)
-		{
-		}
-
 	}
 }
 

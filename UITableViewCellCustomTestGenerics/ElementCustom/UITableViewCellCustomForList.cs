@@ -7,7 +7,7 @@ using MonoTouch.UIKit;
 
 namespace MonoMobile.Dialog
 {
-	public partial class UITableViewCellCustomForList : UITableViewCellCustom
+	public partial class UITableViewCellCustomForList : UITableViewCellCustom<string>
 	{  
 
 		public UITableViewCellCustomForList () : base()
@@ -28,9 +28,7 @@ namespace MonoMobile.Dialog
 		}
 
 
-		public override void UpdateWithData<BusinessObjectType>(BusinessObjectType bo_object)
-		{
-		}
+
 
 		}
 }

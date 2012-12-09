@@ -4,14 +4,16 @@ using System.Drawing;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using UITableViewCellCustomTestVersionInitial;
 
 namespace MonoMobile.Dialog
 {
-	public partial class UITableViewCellPerson : UITableViewCellCustom
+	public partial class UITableViewCellPerson : UITableViewCellCustom<Person>
 	{  
 
 		public UITableViewCellPerson () : base()
 		{
+			this.Binder += BindPerson;
 		}
 		
 		public UITableViewCellPerson (IntPtr handle) : base(handle)
@@ -19,7 +21,7 @@ namespace MonoMobile.Dialog
 		}
 
 		// TODO: refactor to be more generic
-		public override void UpdateWithData<Person>(Person bo_object)
+		public void BindPerson(Person bo_object)
 		{
 		  this.labelNameLast.Text = bo_object.NameFirst;
 			this.labelNameLast.Text = bo_object.NameLast;
