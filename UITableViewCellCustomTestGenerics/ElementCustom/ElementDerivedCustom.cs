@@ -8,6 +8,14 @@ using MonoTouch.ObjCRuntime;
 
 namespace MonoMobile.Dialog
 {
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <typeparam name="UITableViewCellType"></typeparam>
+	/// <typeparam name="BusinessObjectType"></typeparam>
+	/// <see cref="http://tirania.org/monomac/archive/2011/Jan-18.html"/>
+	/// <see cref="http://www.alexyork.net/blog/2011/07/18/creating-custom-uitableviewcells-with-monotouch-the-correct-way/"/>
+	/// <see cref="http://simon.nureality.ca/?p=91"/>
 	public partial class 
 		ElementDerivedCustom<UITableViewCellType, BusinessObjectType> 
 		:
@@ -22,52 +30,251 @@ namespace MonoMobile.Dialog
 			MonoMobile.Dialog.UITableViewCellCustom<BusinessObjectType>
 			// TODO: investigate if UIView could be instead of UITableViewCell
 	{
-		public ElementDerivedCustom () : base (null)
+
+		# region    Constructors
+		//-------------------------------------------------------------------------
+		public ElementDerivedCustom()
+			: base(null)
 		{
 		}
-
-		public ElementDerivedCustom (string fnx) : base (null)
-		{		
-			file_name_xib = fnx;
-		}
-
-		string file_name_xib;
-		public string FileNameXib {
-			get {
-				return file_name_xib;
-			}
-			set {
-				file_name_xib = value;
-			}
-		}
-
-		UITableViewCellCustom<BusinessObjectType> cell_custom;
-		public UITableViewCellCustom<BusinessObjectType> CellCustom
+		//-------------------------------------------------------------------------
+		public ElementDerivedCustom(string filename_xib)
+			: base(null)
 		{
-			get {
-				return cell_custom;
-			}
-			set {
-				cell_custom = value;
-			}
+			this.FileNameXIB = filename_xib;
 		}
-		
-		
+		//-------------------------------------------------------------------------
+		public ElementDerivedCustom(string filename_xib, string cell_identifier)
+			: this(filename_xib)
+		{
+			this.CellReuseIdentifier = cell_identifier;
+		}
+		//-------------------------------------------------------------------------
+		# endregion Constructors
+
+		//-------------------------------------------------------------------------
+		# region Property string FileNameXIB w Event post (FileNameXIBChanged)
 		/// <summary>
-		/// The business_object_type.
+		/// FileNameXIB
+		/// </summary>
+		public
+		  string
+		  FileNameXIB
+		{
+			get
+			{
+				return file_name_xib;
+			} // FileNameXIB.get
+			set
+			{
+				//if (file_name_xib != value)		// do not write if equivalent/equal/same
+				{
+					// for multi threading apps uncomment lines beginnig with //MT:
+					//MT: lock(file_name_xib) // MultiThread safe				
+					{
+						file_name_xib = value;
+						if (null != FileNameXIBChanged)
+						{
+							FileNameXIBChanged(this, new EventArgs());
+						}
+					}
+				}
+			} // FileNameXIB.set
+		} // FileNameXIB
+
+		/// <summary>
+		/// private member field for holding FileNameXIB data
+		/// </summary>
+		private
+			string
+			file_name_xib
+			;
+
+		///<summary>
+		/// Event for wiring BusinessLogic object changes and presentation
+		/// layer notifications.
+		/// FileNameXIBChanged (<propertyname>Changed) is intercepted by Windows Forms
+		/// 1.x and 2.0 event dispatcher 
+		/// and for some CLR types by WPF event dispatcher 
+		/// usually INotifyPropertyChanged and PropertyChanged event
+		///</summary>
+		public
+			event
+			EventHandler
+			FileNameXIBChanged
+			;
+		# endregion Property string FileNameXIB w Event post (FileNameXIBChanged)
+		//-------------------------------------------------------------------------
+
+		//-------------------------------------------------------------------------
+		# region Property UITableViewCellCustom<BusinessObjectType> CellCustom w Event post (CellCustomChanged)
+		/// <summary>
+		/// CellCustom
+		/// </summary>
+		public
+		  UITableViewCellCustom<BusinessObjectType>
+		  CellCustom
+		{
+			get
+			{
+				return cell_custom;
+			} // CellCustom.get
+			set
+			{
+				//if (cell_custom != value)		// do not write if equivalent/equal/same
+				{
+					// for multi threading apps uncomment lines beginnig with //MT:
+					//MT: lock(cell_custom) // MultiThread safe				
+					{
+						cell_custom = value;
+						if (null != CellCustomChanged)
+						{
+							CellCustomChanged(this, new EventArgs());
+						}
+					}
+				}
+			} // CellCustom.set
+		} // CellCustom
+
+		/// <summary>
+		/// private member field for holding CellCustom data
+		/// </summary>
+		private
+			UITableViewCellCustom<BusinessObjectType>
+			cell_custom
+			;
+
+		///<summary>
+		/// Event for wiring BusinessLogic object changes and presentation
+		/// layer notifications.
+		/// CellCustomChanged (<propertyname>Changed) is intercepted by Windows Forms
+		/// 1.x and 2.0 event dispatcher 
+		/// and for some CLR types by WPF event dispatcher 
+		/// usually INotifyPropertyChanged and PropertyChanged event
+		///</summary>
+		public
+			event
+			EventHandler
+			CellCustomChanged
+			;
+		# endregion Property UITableViewCellCustom<BusinessObjectType> CellCustom w Event post (CellCustomChanged)
+		//-------------------------------------------------------------------------
+			
+		//-------------------------------------------------------------------------
+		# region Property BusinessObjectType BusinessObject w Event post (BusinessObjectChanged)
+		/// <summary>
+		/// BusinessObject business_object_type.
 		///  BO logic type = Tag in WindowsFoms or similar! "Kinda databinding"
 		/// </summary>
-		BusinessObjectType business_object_type;
-		public BusinessObjectType BusinessObject
+		public
+		  BusinessObjectType
+		  BusinessObject
 		{
-			get {
+			get
+			{
 				return business_object_type;
-			}
-			set {
-				business_object_type = value;
-			}
-		}
-		
+			} // BusinessObject.get
+			set
+			{
+				//if (business_object_type != value)		// do not write if equivalent/equal/same
+				{
+					// for multi threading apps uncomment lines beginnig with //MT:
+					//MT: lock(business_object_type) // MultiThread safe				
+					{
+						business_object_type = value;
+						if (null != BusinessObjectChanged)
+						{
+							BusinessObjectChanged(this, new EventArgs());
+						}
+					}
+				}
+			} // BusinessObject.set
+		} // BusinessObject
+
+		/// <summary>
+		/// private member field for holding BusinessObject data
+		/// </summary>
+		private
+			BusinessObjectType
+			business_object_type
+			;
+
+		///<summary>
+		/// Event for wiring BusinessLogic object changes and presentation
+		/// layer notifications.
+		/// BusinessObjectChanged (<propertyname>Changed) is intercepted by Windows Forms
+		/// 1.x and 2.0 event dispatcher 
+		/// and for some CLR types by WPF event dispatcher 
+		/// usually INotifyPropertyChanged and PropertyChanged event
+		///</summary>
+		public
+			event
+			EventHandler
+			BusinessObjectChanged
+			;
+		# endregion Property BusinessObjectType BusinessObject w Event post (BusinessObjectChanged)
+		//-------------------------------------------------------------------------
+
+		//-------------------------------------------------------------------------
+		# region Property string CellReuseIdentifier w Event post (CellReuseIdentifierChanged)
+		/// <summary>
+		/// CellReuseIdentifier from XIB (Defined in XCode InterfaceBuilder)
+		/// TableViewCell Identifier.
+		/// This identifier is used in DequeueReusableCell(string) for Cell Memory Management
+		/// in XIB:
+		/// <string key="IBUIReuseIdentifier"><*CellReuseIdentifier*></string>
+		/// <see cref="http://www.alexyork.net/blog/2011/07/18/creating-custom-uitableviewcells-with-monotouch-the-correct-way/"/>
+		/// </summary>
+		public
+		  string
+		  CellReuseIdentifier
+		{
+			get
+			{
+				return cell_reuse_identifier;
+			} // CellReuseIdentifier.get
+			set
+			{
+				//if (cell_reuse_identifier != value)		// do not write if equivalent/equal/same
+				{
+					// for multi threading apps uncomment lines beginnig with //MT:
+					//MT: lock(cell_reuse_identifier) // MultiThread safe				
+					{
+						cell_reuse_identifier = value;
+						if (null != CellReuseIdentifierChanged)
+						{
+							CellReuseIdentifierChanged(this, new EventArgs());
+						}
+					}
+				}
+			} // CellReuseIdentifier.set
+		} // CellReuseIdentifier
+
+		/// <summary>
+		/// private member field for holding CellReuseIdentifier data
+		/// </summary>
+		private
+			string
+			cell_reuse_identifier
+			;
+
+		///<summary>
+		/// Event for wiring BusinessLogic object changes and presentation
+		/// layer notifications.
+		/// CellReuseIdentifierChanged (<propertyname>Changed) is intercepted by Windows Forms
+		/// 1.x and 2.0 event dispatcher 
+		/// and for some CLR types by WPF event dispatcher 
+		/// usually INotifyPropertyChanged and PropertyChanged event
+		///</summary>
+		public
+			event
+			EventHandler
+			CellReuseIdentifierChanged
+			;
+		# endregion Property string CellReuseIdentifier w Event post (CellReuseIdentifierChanged)
+		//-------------------------------------------------------------------------
+
+	
 		public override UITableViewCell GetCell (UITableView tv)
 		{
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
@@ -75,19 +282,20 @@ namespace MonoMobile.Dialog
 			// Reuse a cell if one exists
 			// 
 			// <string key="IBUIReuseIdentifier">UITableViewCellCustom</string>
-			NSString memory_identifier = new NSString("UITableViewCellCustom");
+			// 
+			NSString memory_identifier = new NSString(this.CellReuseIdentifier);
 			cell_custom = tv.DequeueReusableCell(memory_identifier) as UITableViewCellType;
 
 			if (CellCustom == null) 
 			{   
-				if ("" == file_name_xib || null == file_name_xib ) 
+				if ("" == this.FileNameXIB || null == this.FileNameXIB) 
 				{
-					CellCustom = this.CellFromXib ("UITableViewCellPerson", tv)
+					CellCustom = this.CellFromXib (this.FileNameXIB, tv)
 										as UITableViewCellType;
 				} 
 				else 
 				{			
-					CellCustom = this.CellFromXib (file_name_xib, tv)
+					CellCustom = this.CellFromXib (this.FileNameXIB, tv)
 										as UITableViewCellType;
 				}
 			}
