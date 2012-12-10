@@ -6,19 +6,19 @@
 //
 using MonoTouch.Foundation;
 
-namespace MonoMobile.Dialog
+namespace UITableViewCellCustomTestGenerics.SampleUsages
 {
 	[Register ("UITableViewCellPerson")]
 	partial class UITableViewCellPerson
 	{
 		[Outlet]
-		MonoTouch.UIKit.UILabel labelNameLast { get; set; }
+		public MonoTouch.UIKit.UILabel labelNameLast { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UILabel labelNameFirst { get; set; }
+		public MonoTouch.UIKit.UILabel labelNameFirst { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UILabel labelDateOfBirth { get; set; }
+		public MonoTouch.UIKit.UILabel labelDateOfBirth { get; set; }
 
 		[Outlet]
 		MonoTouch.UIKit.UIButton buttonTerminate { get; set; }

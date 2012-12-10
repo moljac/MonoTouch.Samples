@@ -4,8 +4,9 @@ using System.Drawing;
 
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using MonoMobile.Dialog;
 
-namespace MonoMobile.Dialog
+namespace UITableViewCellCustomTestGenerics.SampleUsages
 {
 	public partial class UITableViewCellCustomForList : UITableViewCellCustom<string>
 	{  
@@ -19,17 +20,6 @@ namespace MonoMobile.Dialog
 		{
 		}
 
-		// TODO: refactor to be more generic
-		public void UpdateWithData(string name)
-		{  
-			lblDate.Text = DateTime.Now.Millisecond.ToString();
-			lblName.Text = name;
-			btnDelete.Hidden = false;
-		}
-
-
-
-
-		}
+	}
 }
 
