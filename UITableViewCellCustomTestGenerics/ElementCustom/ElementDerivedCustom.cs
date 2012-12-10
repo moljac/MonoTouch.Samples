@@ -159,71 +159,11 @@ namespace MonoMobile.Dialog
 			;
 		# endregion Property UITableViewCellCustom<BusinessObjectType> CellCustom w Event post (CellCustomChanged)
 		//-------------------------------------------------------------------------
-			
-		//-------------------------------------------------------------------------
-		# region Property BusinessObjectType BusinessObject w Event post (BusinessObjectChanged)
-		/// <summary>
-		/// BusinessObject business_object_type.
-		///  BO logic type = Tag in WindowsFoms or similar! "Kinda databinding"
-		/// </summary>
-		public
-		  BusinessObjectType
-		  BusinessObject
-		{
-			get
-			{
-				return business_object_type;
-			} // BusinessObject.get
-			set
-			{
-				//if (business_object_type != value)		// do not write if equivalent/equal/same
-				{
-					// for multi threading apps uncomment lines beginnig with //MT:
-					//MT: lock(business_object_type) // MultiThread safe				
-					{
-						business_object_type = value;
-						if (null != BusinessObjectChanged)
-						{
-							BusinessObjectChanged(this, new EventArgs());
-						}
-					}
-				}
-			} // BusinessObject.set
-		} // BusinessObject
-
-		/// <summary>
-		/// private member field for holding BusinessObject data
-		/// </summary>
-		private
-			BusinessObjectType
-			business_object_type
-			;
-
-		///<summary>
-		/// Event for wiring BusinessLogic object changes and presentation
-		/// layer notifications.
-		/// BusinessObjectChanged (<propertyname>Changed) is intercepted by Windows Forms
-		/// 1.x and 2.0 event dispatcher 
-		/// and for some CLR types by WPF event dispatcher 
-		/// usually INotifyPropertyChanged and PropertyChanged event
-		///</summary>
-		public
-			event
-			EventHandler
-			BusinessObjectChanged
-			;
-		# endregion Property BusinessObjectType BusinessObject w Event post (BusinessObjectChanged)
-		//-------------------------------------------------------------------------
 
 		//-------------------------------------------------------------------------
 		# region Property string CellReuseIdentifier w Event post (CellReuseIdentifierChanged)
 		/// <summary>
-		/// CellReuseIdentifier from XIB (Defined in XCode InterfaceBuilder)
-		/// TableViewCell Identifier.
-		/// This identifier is used in DequeueReusableCell(string) for Cell Memory Management
-		/// in XIB:
-		/// <string key="IBUIReuseIdentifier"><*CellReuseIdentifier*></string>
-		/// <see cref="http://www.alexyork.net/blog/2011/07/18/creating-custom-uitableviewcells-with-monotouch-the-correct-way/"/>
+		/// CellReuseIdentifier
 		/// </summary>
 		public
 		  string
@@ -274,7 +214,7 @@ namespace MonoMobile.Dialog
 		# endregion Property string CellReuseIdentifier w Event post (CellReuseIdentifierChanged)
 		//-------------------------------------------------------------------------
 
-	
+
 		public override UITableViewCell GetCell (UITableView tv)
 		{
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
@@ -301,21 +241,22 @@ namespace MonoMobile.Dialog
 			}
 
 			// This cell has been used before, so we need to update it's data
-			CellCustom.DataBind(business_object_type);
+			CellCustom.DataBind(CellCustom, business_object_type);
 			
 			return CellCustom;
-			
 		}
 
-		public UITableViewCell CellFromXib (string file_name_xib, UITableView tv)
+
+		public UITableViewCell CellFromXib(string file_name_xib, UITableView tv)
 		{
 			// allocate/load a cell from XIB
-			NSArray views = NSBundle.MainBundle.LoadNib (file_name_xib, tv, null);
+			NSArray views = NSBundle.MainBundle.LoadNib(file_name_xib, tv, null);
 			UITableViewCell cc;
 			cc = Runtime.GetNSObject(views.ValueAt(0)) as UITableViewCell;
-			
+
 			return cc;
 		}
+
 	}
 }
 
