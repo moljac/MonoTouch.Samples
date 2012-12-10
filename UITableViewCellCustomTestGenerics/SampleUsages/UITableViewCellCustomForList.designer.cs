@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace MonoMobile.Dialog
+namespace UITableViewCellCustomTestGenerics.SampleUsages
 {
 	[Register("UITableViewCellCustomForList")]
 	partial class UITableViewCellCustomForList

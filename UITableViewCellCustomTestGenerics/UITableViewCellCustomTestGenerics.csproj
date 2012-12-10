@@ -94,36 +94,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustomHuzDaBoss.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustomHuzDaBoss.designer.cs">
-      <DependentUpon>UITableViewCellCustomHuzDaBoss.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="DialogViewControllerDemoListViewCustomCell.cs" />
     <Compile Include="ElementCustom\ElementDerivedCustom.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustomForList.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustomForList.designer.cs">
+    <Compile Include="SampleUsages\UITableViewCellCustomForList.cs" />
+    <Compile Include="SampleUsages\UITableViewCellCustomForList.designer.cs">
       <DependentUpon>UITableViewCellCustomForList.cs</DependentUpon>
     </Compile>
-    <Compile Include="ElementCustom\ElementDerivedCustom.Update.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="UITableViewCellPerson.designer.cs">
+    <Compile Include="SampleUsages\UITableViewCellCustomHuzDaBoss.cs" />
+    <Compile Include="SampleUsages\UITableViewCellCustomHuzDaBoss.designer.cs">
+      <DependentUpon>UITableViewCellCustomHuzDaBoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\ElementDerivedCustom.DataBind.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustom.DataBind.cs" />
+    <Compile Include="SampleUsages\UITableViewCellPerson.cs" />
+    <Compile Include="SampleUsages\UITableViewCellPerson.designer.cs">
       <DependentUpon>UITableViewCellPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="UITableViewCellPerson.cs" />
+    <Compile Include="SampleUsages\Person.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomForList.xib">
+    <InterfaceDefinition Include="SampleUsages\UITableViewCellCustomForList.xib">
       <DependentUpon>UITableViewCellCustomForList.cs</DependentUpon>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomHuzDaBoss.xib">
+    <InterfaceDefinition Include="SampleUsages\UITableViewCellCustomHuzDaBoss.xib">
       <DependentUpon>UITableViewCellCustomHuzDaBoss.cs</DependentUpon>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="UITableViewCellPerson.xib">
+    <InterfaceDefinition Include="SampleUsages\UITableViewCellPerson.xib">
       <DependentUpon>UITableViewCellPerson.cs</DependentUpon>
     </InterfaceDefinition>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="SampleUsages\" />
+  </ItemGroup>
 </Project>

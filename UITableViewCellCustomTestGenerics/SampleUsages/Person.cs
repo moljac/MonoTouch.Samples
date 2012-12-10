@@ -9,7 +9,7 @@ using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 using MonoMobile.Dialog;
 
-namespace UITableViewCellCustomTestVersionInitial
+namespace UITableViewCellCustomTestGenerics.SampleUsages
 {
 	public partial class Person
 	{

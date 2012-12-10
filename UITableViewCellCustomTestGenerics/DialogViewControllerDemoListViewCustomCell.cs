@@ -9,22 +9,33 @@ using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 using MonoMobile.Dialog;
 
+using UITableViewCellCustomTestGenerics.SampleUsages;
+
 namespace UITableViewCellCustomTestVersionInitial
 {
 	public partial class DialogViewControllerDemoListViewCustomCell : DialogViewController
 	{
 		public DialogViewControllerDemoListViewCustomCell () : base (UITableViewStyle.Plain, null)
 		{
-
+			// Defining some element based on Custom Cell and some Business (Domain) object
 			ElementDerivedCustom<UITableViewCellPerson, Person> edc1;
 			edc1 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
 			
 			ElementDerivedCustom<UITableViewCellPerson, Person> edc2;
-			edc2 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
+			edc2 = new ElementDerivedCustom<UITableViewCellPerson, Person>()
+			{
+				CellCustom = new UITableViewCellCustom<Person>()
+				{
+					// intializers only for fields or properties
+					// Binder += BindThisCellAndObject
+				}
+			};
+			edc2.CellCustom.DataBindMethod += BindCustomCellAndObject;
 			
 			ElementDerivedCustom<UITableViewCellPerson, Person> edc3;
 			edc3 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
 			
+			// Define UI
 			Root = new RootElement ("MTD") 
 			{
 				new Section ("First Section"){
@@ -65,6 +76,14 @@ namespace UITableViewCellCustomTestVersionInitial
 
 				},
 			};
+		}
+		
+		
+		// Drawback: custom cell should have controls publicly exposed
+		void BindCustomCellAndObject (UITableViewCellCustom<Person> tcp, Person p)
+		{
+		    
+			return;
 		}
 	}
 }

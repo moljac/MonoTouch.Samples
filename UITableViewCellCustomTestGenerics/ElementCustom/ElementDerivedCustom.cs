@@ -40,6 +40,16 @@ namespace MonoMobile.Dialog
 				file_name_xib = value;
 			}
 		}
+		
+		public UITableViewCell CellFromXib (string file_name_xib, UITableView tv)
+		{
+			// allocate/load a cell from XIB
+			NSArray views = NSBundle.MainBundle.LoadNib (file_name_xib, tv, null);
+			UITableViewCell cc;
+			cc = Runtime.GetNSObject(views.ValueAt(0)) as UITableViewCell;
+			
+			return cc;
+		}
 
 		UITableViewCellCustom<BusinessObjectType> cell_custom;
 		public UITableViewCellCustom<BusinessObjectType> CellCustom
@@ -49,22 +59,6 @@ namespace MonoMobile.Dialog
 			}
 			set {
 				cell_custom = value;
-			}
-		}
-		
-		
-		/// <summary>
-		/// The business_object_type.
-		///  BO logic type = Tag in WindowsFoms or similar! "Kinda databinding"
-		/// </summary>
-		BusinessObjectType business_object_type;
-		public BusinessObjectType BusinessObject
-		{
-			get {
-				return business_object_type;
-			}
-			set {
-				business_object_type = value;
 			}
 		}
 		
@@ -93,21 +87,12 @@ namespace MonoMobile.Dialog
 			}
 
 			// This cell has been used before, so we need to update it's data
-			CellCustom.DataBind(business_object_type);
+			CellCustom.DataBind(CellCustom, business_object_type);
 			
 			return CellCustom;
 			
 		}
 
-		public UITableViewCell CellFromXib (string file_name_xib, UITableView tv)
-		{
-			// allocate/load a cell from XIB
-			NSArray views = NSBundle.MainBundle.LoadNib (file_name_xib, tv, null);
-			UITableViewCell cc;
-			cc = Runtime.GetNSObject(views.ValueAt(0)) as UITableViewCell;
-			
-			return cc;
-		}
 	}
 }
 

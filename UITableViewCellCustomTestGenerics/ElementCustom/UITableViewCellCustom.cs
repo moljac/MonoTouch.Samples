@@ -5,9 +5,6 @@ using System.Text;
 
 namespace MonoMobile.Dialog
 {
-	public delegate void DataBindDelegate<BusinessObjectType>(BusinessObjectType bot);
-
-
 	public partial class UITableViewCellCustom<BusinessObjectType>
 		: 
 		MonoTouch.UIKit.UITableViewCell
@@ -20,25 +17,5 @@ namespace MonoMobile.Dialog
 		{
 
 		}
-
-		public event DataBindDelegate<BusinessObjectType> Binder;
-
-		public void DataBind(BusinessObjectType bot)
-		{
-			if (Binder != null)
-			{
-				Binder(bot);
-			}
-		}
 	}
-
-
-
-
 }
-/*
-	new cell
- * 
- *  this.Binder += new CellDrawGenric()
- *  
-*/
