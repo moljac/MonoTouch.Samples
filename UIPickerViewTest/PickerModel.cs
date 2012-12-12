@@ -6,7 +6,7 @@ using MonoTouch.Foundation;
 
 using System.Collections.Generic;
 
-namespace ElementsTestingAdvanced
+namespace UIPickerViewTest
 {
 	public class PickerModel : UIPickerViewModel
 		

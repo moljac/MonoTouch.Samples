@@ -5,7 +5,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace ElementsTestingAdvanced
+namespace UIPickerViewTest
 {
 	public partial class PickerView : UIViewController
 	{
@@ -43,13 +43,6 @@ namespace ElementsTestingAdvanced
 			UIPickerView picker = new UIPickerView ();
 			picker.ShowSelectionIndicator = true;
 			picker.Model = model;
-			//testing----------------------------------
-
-			picker.Frame.Height = 800f; //working
-
-
-
-			//------------------------------------------
 
 			//TAP GESTURE
 			var tap = new UITapGestureRecognizer();
