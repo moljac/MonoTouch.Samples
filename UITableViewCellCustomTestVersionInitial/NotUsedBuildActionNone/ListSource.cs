@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
 
-namespace TEST
+namespace UITableViewCellCustomTestVersionInitial
 {
 	public class ListSource : UITableViewSource
 	{

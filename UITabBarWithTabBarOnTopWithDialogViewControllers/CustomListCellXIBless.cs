@@ -5,7 +5,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Collections.Generic;
 
-namespace TabBarOnTopDVC
+namespace UITabBarWithTabBarOnTopWithDialogViewControllers
 {
 	public partial class CustomListCellXIBless : UITableViewCell
 	{  

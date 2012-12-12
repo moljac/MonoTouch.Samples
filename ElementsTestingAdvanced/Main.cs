@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace ElementsTesting
+namespace UIPickerViewTest
 {
 	public class Application
 	{

@@ -6,10 +6,10 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-using SampleData;
-
 //using MonoTouch.Dialog;
 using MonoMobile.Dialog;
+
+using SampleData;
 
 namespace UITableViewCellCustomizationFromXIB
 {

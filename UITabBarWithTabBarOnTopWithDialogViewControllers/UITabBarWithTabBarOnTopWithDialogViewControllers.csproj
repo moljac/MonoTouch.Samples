@@ -8,9 +8,9 @@
     <ProjectGuid>{F668A965-5E62-45E8-BB00-CE020F1B635C}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TabBarOnTopDVC</RootNamespace>
+    <RootNamespace>UITabBarWithTabBarOnTopWithDialogViewControllers</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>TabBarOnTopDVC</AssemblyName>
+    <AssemblyName>UITabBarWithTabBarOnTopWithDialogViewControllers</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>True</DebugSymbols>

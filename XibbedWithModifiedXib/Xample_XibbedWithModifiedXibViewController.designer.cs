@@ -5,7 +5,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace Xample.XibbedWithModifiedXib
+namespace XIBfullWithModifiedXIB
 {
 	[Register ("Xample_XibbedWithModifiedXibViewController")]
 	partial class Xample_XibbedWithModifiedXibViewController

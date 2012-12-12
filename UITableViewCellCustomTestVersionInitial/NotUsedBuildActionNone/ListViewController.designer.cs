@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace TEST
+namespace UITableViewCellCustomTestVersionInitial
 {
 	[Register ("ListViewController")]
 	partial class ListViewController

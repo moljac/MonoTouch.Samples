@@ -5,7 +5,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace ElementsTesting
+namespace UIPickerViewTest
 {
 	public partial class PickerView : UIViewController
 	{

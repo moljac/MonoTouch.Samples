@@ -5,17 +5,31 @@ using System.Text;
 
 namespace MonoMobile.Dialog
 {
-	public partial class UITableViewCellCustom<BusinessObjectType>
+	/// <summary>
+	/// Customized UITablViewCell based on BusinessObjectType (Business/Model/Domain Logic)
+	/// The class is abstract, so the user must inherit from it  and implement methods
+	/// for DataBinding.
+	/// </summary>
+	/// <typeparam name="BusinessObjectType"></typeparam>
+	public abstract partial class UITableViewCellCustom<BusinessObjectType>
 		: 
 		MonoTouch.UIKit.UITableViewCell
 	{
-		public UITableViewCellCustom () : base()
+
+		# region    Constructors
+		//-------------------------------------------------------------------------
+		public UITableViewCellCustom()
+			: base()
 		{
 		}
-		
-		public UITableViewCellCustom (IntPtr handle) : base(handle)
+		//-------------------------------------------------------------------------
+		public UITableViewCellCustom(IntPtr handle)
+			: base(handle)
 		{
 
 		}
+		//-------------------------------------------------------------------------
+		# endregion Constructors
+	
 	}
 }

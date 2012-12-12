@@ -20,6 +20,14 @@ namespace UITableViewCellCustomTestGenerics.SampleUsages
 		{
 		}
 
+		public override void DataBind(string text)
+		{
+			this.lblDate.Text = text + DateTime.Now;
+			this.lblDate.Text = text;
+			btnDelete.SetTitle("title set" + text, UIControlState.Normal);
+
+			return;
+		}
 	}
 }
 

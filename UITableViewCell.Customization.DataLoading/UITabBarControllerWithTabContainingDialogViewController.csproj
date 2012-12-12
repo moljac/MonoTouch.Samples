@@ -8,7 +8,7 @@
     <ProjectGuid>{56BB61A0-78F1-4168-8AA6-89B74E02E443}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TabBar</RootNamespace>
+    <RootNamespace>UITabBarControllerWithTabContainingDialogViewController</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>True</DebugSymbols>

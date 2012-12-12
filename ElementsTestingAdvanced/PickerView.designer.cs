@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace ElementsTesting
+namespace UIPickerViewTest
 {
 	[Register ("PickerView")]
 	partial class PickerView

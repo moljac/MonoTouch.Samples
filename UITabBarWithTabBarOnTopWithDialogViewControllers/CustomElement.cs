@@ -5,7 +5,7 @@ using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using MonoTouch.ObjCRuntime;
 
-namespace TabBarOnTopDVC
+namespace UITabBarWithTabBarOnTopWithDialogViewControllers
 {
 	public partial class CustomElement<BusinessLogicType, PresentationType> : Element
 		where 

@@ -5,7 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Xample.XibbedSingleController
+namespace XIBfullSingleController
 {
 	public class Application
 	{

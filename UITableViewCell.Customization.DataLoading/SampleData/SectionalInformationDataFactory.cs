@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SampleData
+namespace UITabBarControllerWithTabContainingDialogViewController.SampleData
 {
 	public partial class SectionalInformationDataFactory
 	{

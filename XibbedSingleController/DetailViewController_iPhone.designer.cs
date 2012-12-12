@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace Xample.XibbedSingleController
+namespace XIBfullSingleController
 {
 	[Register ("DetailViewController_iPhone")]
 	partial class DetailViewController_iPhone

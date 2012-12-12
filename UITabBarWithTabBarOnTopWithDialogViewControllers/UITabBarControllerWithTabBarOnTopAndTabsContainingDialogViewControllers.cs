@@ -5,7 +5,7 @@ using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 using System.Collections.Generic;
 
-namespace TabBarOnTopDVC 
+namespace UITabBarWithTabBarOnTopWithDialogViewControllers 
 {
 	public class UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers : UITabBarController 
 	{

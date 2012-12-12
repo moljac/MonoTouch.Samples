@@ -241,7 +241,7 @@ namespace MonoMobile.Dialog
 			}
 
 			// This cell has been used before, so we need to update it's data
-			CellCustom.DataBind(CellCustom, business_object_type);
+			CellCustom.DataBind(business_object_type);
 			
 			return CellCustom;
 		}

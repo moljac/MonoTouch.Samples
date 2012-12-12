@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace Xample.XibbedSingleController
+namespace XIBfullSingleController
 {
 	[Register ("Xample_XibbedSingleControllerViewController")]
 	partial class Xample_XibbedSingleControllerViewController

@@ -8,9 +8,9 @@
     <ProjectGuid>{0E76CB98-2FD4-449E-A8A8-B29B793E205D}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TEST</RootNamespace>
+    <RootNamespace>UITableViewCellCustomTestGenerics</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>TEST</AssemblyName>
+    <AssemblyName>UITableViewCellCustomTestGenerics</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>True</DebugSymbols>
@@ -93,6 +93,7 @@
     <None Include="NotUsedBuildActionNone\ListViewController.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UITableViewCellCustomPerson.Extensions.cs" />
     <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -106,11 +107,15 @@
     <Compile Include="SampleUsages\UITableViewCellCustomHuzDaBoss.designer.cs">
       <DependentUpon>UITableViewCellCustomHuzDaBoss.cs</DependentUpon>
     </Compile>
-    <Compile Include="ElementCustom\ElementDerivedCustom.DataBind.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustom.DataBind.cs" />
-    <Compile Include="SampleUsages\UITableViewCellPerson.cs" />
-    <Compile Include="SampleUsages\UITableViewCellPerson.designer.cs">
-      <DependentUpon>UITableViewCellPerson.cs</DependentUpon>
+    <Compile Include="ElementCustom\ElementDerivedCustom.DataBind.cs">
+      <DependentUpon>ElementDerivedCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\UITableViewCellCustom.DataBind.cs">
+      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleUsages\UITableViewCellCustomPerson.cs" />
+    <Compile Include="SampleUsages\UITableViewCellCustomPerson.designer.cs">
+      <DependentUpon>UITableViewCellCustomPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="SampleUsages\Person.cs" />
   </ItemGroup>
@@ -123,11 +128,9 @@
       <DependentUpon>UITableViewCellCustomHuzDaBoss.cs</DependentUpon>
     </InterfaceDefinition>
     <InterfaceDefinition Include="SampleUsages\UITableViewCellPerson.xib">
-      <DependentUpon>UITableViewCellPerson.cs</DependentUpon>
+      <DependentUpon>UITableViewCellCustomPerson.cs</DependentUpon>
     </InterfaceDefinition>
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="SampleUsages\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

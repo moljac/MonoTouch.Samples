@@ -16,17 +16,9 @@ namespace MonoMobile.Dialog
 
 	public partial class UITableViewCellCustom<BusinessObjectType>
 	{
+		public abstract void DataBind(BusinessObjectType bot);
+
 		public event DataBindDelegate<BusinessObjectType> DataBindMethod;
 
-		public void DataBind (UITableViewCellCustom<BusinessObjectType> cell, BusinessObjectType bot)
-		{
-			if (DataBindMethod != null) 
-			{
-				cell.DataBindMethod (cell, bot);
-			} else 
-			{
-				Debug.WriteLine("No DataBinding method assigned!");
-			}
-		}
 	}
 }

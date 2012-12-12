@@ -4,7 +4,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Xample.XibbedWithModifiedXib
+namespace XIBfullWithModifiedXIB
 {
 	public partial class Xample_XibbedWithModifiedXibViewController 
 		: 

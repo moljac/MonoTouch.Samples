@@ -5,7 +5,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Xample.XibbedSingleController
+namespace XIBfullSingleController
 {
 	public partial class DetailViewController_iPhone 
 		: 

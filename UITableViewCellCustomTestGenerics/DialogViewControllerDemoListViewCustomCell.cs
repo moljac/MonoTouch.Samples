@@ -11,29 +11,34 @@ using MonoMobile.Dialog;
 
 using UITableViewCellCustomTestGenerics.SampleUsages;
 
-namespace UITableViewCellCustomTestVersionInitial
+namespace UITableViewCellCustomTestGenerics
 {
 	public partial class DialogViewControllerDemoListViewCustomCell : DialogViewController
 	{
 		public DialogViewControllerDemoListViewCustomCell () : base (UITableViewStyle.Plain, null)
 		{
 			// Defining some element based on Custom Cell and some Business (Domain) object
-			ElementDerivedCustom<UITableViewCellPerson, Person> edc1;
-			edc1 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
+			ElementDerivedCustom<UITableViewCellCustomPerson, Person> edc1;
+			edc1 = new ElementDerivedCustom<UITableViewCellCustomPerson, Person>();
 			
-			ElementDerivedCustom<UITableViewCellPerson, Person> edc2;
-			edc2 = new ElementDerivedCustom<UITableViewCellPerson, Person>()
+			ElementDerivedCustom<UITableViewCellCustomPerson, Person> edc2;
+			edc2 = new ElementDerivedCustom<UITableViewCellCustomPerson, Person>()
 			{
-				CellCustom = new UITableViewCellCustom<Person>()
-				{
-					// intializers only for fields or properties
-					// Binder += BindThisCellAndObject
-				}
+				// Generic Version of the custom UITableViewCellCustom is made abstract to
+				// instruct user to inherit and implement required methods (for databinding)
+				//
+				// CellCustom = new UITableViewCellCustom<Person>()
+				// {
+				// 	// intializers only for fields or properties
+				// 	// Binder += BindThisCellAndObject
+				// }
+
+				CellCustom = new UITableViewCellCustomPerson()
 			};
 			edc2.CellCustom.DataBindMethod += BindCustomCellAndObject;
 			
-			ElementDerivedCustom<UITableViewCellPerson, Person> edc3;
-			edc3 = new ElementDerivedCustom<UITableViewCellPerson, Person>();
+			ElementDerivedCustom<UITableViewCellCustomPerson, Person> edc3;
+			edc3 = new ElementDerivedCustom<UITableViewCellCustomPerson, Person>();
 			
 			// Define UI
 			Root = new RootElement ("MTD") 
@@ -52,7 +57,7 @@ namespace UITableViewCellCustomTestVersionInitial
 				},
 				new Section ("Second Section")
 				{
-				  new ElementDerivedCustom<UITableViewCellPerson, Person>()
+				  new ElementDerivedCustom<UITableViewCellCustomPerson, Person>()
 				  {
 				    BusinessObject = new Person()
 				    		{
@@ -62,7 +67,7 @@ namespace UITableViewCellCustomTestVersionInitial
 				    		}
 				  }
 				, edc1
-				, new ElementDerivedCustom<UITableViewCellPerson, Person>()
+				, new ElementDerivedCustom<UITableViewCellCustomPerson, Person>()
 					{
 						BusinessObject = new Person()
 						{
@@ -80,10 +85,12 @@ namespace UITableViewCellCustomTestVersionInitial
 		
 		
 		// Drawback: custom cell should have controls publicly exposed
+		// Abandoned!
 		void BindCustomCellAndObject (UITableViewCellCustom<Person> tcp, Person p)
 		{
 		    
 			return;
 		}
+
 	}
 }
