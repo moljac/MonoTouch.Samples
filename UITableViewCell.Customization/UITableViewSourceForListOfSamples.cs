@@ -31,8 +31,9 @@ namespace UITableViewCellCustomization
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 		
 			// Reuse a cell if one exists
-			UITableViewCellCustom cell = tableView.DequeueReusableCell ("ColorCell") as UITableViewCellCustom;
-			
+			// UITableViewCellCustom cell = tableView.DequeueReusableCell ("ColorCell") as UITableViewCellCustom;
+						
+			UITableViewCellCustom cell = tableView.DequeueReusableCell ("UITableViewControllerForList") as UITableViewCellCustom;
 			if (cell == null) 
 			{   
 				// Allocate a cell

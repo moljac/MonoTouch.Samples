@@ -94,11 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UITableViewCellCustomPerson.Extensions.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="DialogViewControllerDemoListViewCustomCell.cs" />
-    <Compile Include="ElementCustom\ElementDerivedCustom.cs" />
     <Compile Include="SampleUsages\UITableViewCellCustomForList.cs" />
     <Compile Include="SampleUsages\UITableViewCellCustomForList.designer.cs">
       <DependentUpon>UITableViewCellCustomForList.cs</DependentUpon>
@@ -106,12 +104,6 @@
     <Compile Include="SampleUsages\UITableViewCellCustomHuzDaBoss.cs" />
     <Compile Include="SampleUsages\UITableViewCellCustomHuzDaBoss.designer.cs">
       <DependentUpon>UITableViewCellCustomHuzDaBoss.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ElementCustom\ElementDerivedCustom.DataBind.cs">
-      <DependentUpon>ElementDerivedCustom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ElementCustom\UITableViewCellCustom.DataBind.cs">
-      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
     </Compile>
     <Compile Include="SampleUsages\UITableViewCellCustomPerson.cs" />
     <Compile Include="SampleUsages\UITableViewCellCustomPerson.designer.cs">
@@ -133,4 +125,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\MonoMobile.Dialog\MonoMobile.Dialog.Touch\MonoMobile.Dialog.Touch.csproj">
+      <Project>{CDFDE85F-F99B-44FD-A9F8-19224D517F3F}</Project>
+      <Name>MonoMobile.Dialog.Touch</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -94,10 +94,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="UITableViewControllerForList.cs" />
-    <Compile Include="UITableViewControllerForList.designer.cs">
-      <DependentUpon>UITableViewControllerForList.cs</DependentUpon>
-    </Compile>
     <Compile Include="UITableViewSourceForListOfSamples.cs" />
     <Compile Include="DialogViewControllerForElementCustomDerived.cs" />
   </ItemGroup>

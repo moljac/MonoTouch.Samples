@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Drawing;
 
 using MonoTouch.Dialog;
-using UITabBarControllerWithTabContainingDialogViewController.SampleData;
+using SampleData;
 
 namespace UITabBarControllerWithTabContainingDialogViewController
 {

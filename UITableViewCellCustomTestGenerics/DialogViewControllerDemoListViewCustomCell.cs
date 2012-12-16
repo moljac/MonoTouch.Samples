@@ -6,17 +6,26 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-using MonoTouch.Dialog;
+//using MonoTouch.Dialog;
 using MonoMobile.Dialog;
 
 using UITableViewCellCustomTestGenerics.SampleUsages;
 
 namespace UITableViewCellCustomTestGenerics
 {
-	public partial class DialogViewControllerDemoListViewCustomCell : DialogViewController
+	public partial class DialogViewControllerDemoListViewCustomCell 
+		: 
+		//MonoTouch.Dialog.DialogViewController
+		MonoMobile.Dialog.DialogViewController
 	{
 		public DialogViewControllerDemoListViewCustomCell () : base (UITableViewStyle.Plain, null)
 		{
+			// Assume all elements of the same type are loaded from the same XIB file
+			ElementDerivedCustom<UITableViewCellCustomPerson, Person>
+				.DefaultCellReuseIdentifier = "UITableViewCellPerson";
+			ElementDerivedCustom<UITableViewCellCustomPerson, Person>
+				.DefaultFileNameXIB = "UITableViewCellPerson";
+			
 			// Defining some element based on Custom Cell and some Business (Domain) object
 			ElementDerivedCustom<UITableViewCellCustomPerson, Person> edc1;
 			edc1 = new ElementDerivedCustom<UITableViewCellCustomPerson, Person>();

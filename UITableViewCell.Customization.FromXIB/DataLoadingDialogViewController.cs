@@ -10,6 +10,7 @@ using MonoTouch.UIKit;
 using MonoMobile.Dialog;
 
 using SampleData;
+using SampleData;
 
 namespace UITableViewCellCustomizationFromXIB
 {
