@@ -84,6 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
+    <None Include="obsolete\CustomElement.cs" />
+    <None Include="obsolete\CustomListCellXIBless.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\UITableViewCell.Customization.DataLoading\SampleData\SectionalInformation.cs">
@@ -95,8 +97,41 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.cs" />
-    <Compile Include="CustomListCellXIBless.cs" />
-    <Compile Include="CustomElement.cs" />
+    <Compile Include="SampleData\Person.cs" />
+    <Compile Include="SampleData\UITableViewCellCustomPerson.cs" />
+    <Compile Include="SampleData\UITableViewCellCustomPerson.designer.cs">
+      <DependentUpon>UITableViewCellCustomPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleData\Car.cs" />
+    <Compile Include="SampleData\sample.cs" />
+    <Compile Include="SampleData\sample.designer.cs">
+      <DependentUpon>sample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleData\CustomUITableViewCell.cs" />
+    <Compile Include="SampleData\CustomUITableViewCell.designer.cs">
+      <DependentUpon>CustomUITableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.NonGeneric.cs" />
+    <Compile Include="UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.Generic.cs" />
+    <Compile Include="UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.FromXIB.cs" />
+    <Compile Include="UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.ManualXIBless.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="obsolete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MonoMobile.Dialog\MonoMobile.Dialog.Touch\MonoMobile.Dialog.Touch.csproj">
+      <Project>{CDFDE85F-F99B-44FD-A9F8-19224D517F3F}</Project>
+      <Name>MonoMobile.Dialog.Touch</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="SampleData\UITableViewCellCustomPerson.xib">
+      <DependentUpon>UITableViewCellCustomPerson.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="SampleData\sample_iPhone.xib" />
+    <InterfaceDefinition Include="SampleData\sample_iPad.xib" />
+    <InterfaceDefinition Include="SampleData\CustomUITableViewCell.xib" />
+  </ItemGroup>
 </Project>

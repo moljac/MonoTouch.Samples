@@ -1,19 +1,28 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementDerivedCustom.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs">
     <Files>
-      <File FileName="UITableViewCellCustomTestGenerics/DialogViewControllerDemoListViewCustomCell.cs" Line="27" Column="43" />
-      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementDerivedCustom.cs" Line="282" Column="1" />
-      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementDerivedCustom.DataBind.cs" Line="3" Column="1" />
-      <File FileName="UITableViewCellCustomTestGenerics/AppDelegate.cs" Line="35" Column="59" />
-      <File FileName="UITableViewCell.Customization/UITableViewSourceForListOfSamples.cs" Line="36" Column="25" />
-      <File FileName="UITableViewCellCustomTestGenerics/SampleUsages/UITableViewCellCustomPerson.designer.cs" Line="1" Column="1" />
-      <File FileName="UITableViewCellCustomTestGenerics/SampleUsages/UITableViewCellCustomPerson.cs" Line="1" Column="1" />
+      <File FileName="UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs" Line="23" Column="63" />
+      <File FileName="UITableViewCell.Customization/UITableViewSourceForListOfSamples.cs" Line="12" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State>
+        <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
+          <Node name="MonoMobile.Dialog.Touch" expanded="True">
+            <Node name="ElementCustom" expanded="True" />
+          </Node>
+          <Node name="UITabBarWithTabBarOnTopWithDialogViewControllers" expanded="True">
+            <Node name="SampleData" expanded="True">
+              <Node name="UITableViewCellCustomPerson.cs" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="UITableViewCell.Customization" expanded="True">
+            <Node name="UITableViewSourceForListOfSamples.xib" selected="True" />
+          </Node>
+          <Node name="UITableViewCell.Customization.FromXIB" expanded="True" />
+          <Node name="UITableViewCellCustomTestGenerics" expanded="True" />
+          <Node name="XIBlessNoUIViewController" expanded="True" />
         </State>
       </Pad>
     </Pads>
@@ -24,7 +33,6 @@
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" line="15" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" line="20" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomDerived.cs" line="65" />
-      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs" line="21" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ListSource.cs" line="41" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestVersionInitial/ListSource.cs" line="18" />
       <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/UITableViewCellCustomTestGenerics/UITableViewCellPerson.cs" line="24" />

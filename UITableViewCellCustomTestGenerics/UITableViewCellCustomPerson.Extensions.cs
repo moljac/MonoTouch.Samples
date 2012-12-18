@@ -15,7 +15,7 @@ namespace UITableViewCellCustomTestGenerics
 {
 	public static class UITableViewCellCustomPersonExtensions
 	{
-		public static void DataBind(this UITableViewCellCustom<Person> tcp, Person p)
+		public static void DataBind(this UITableViewCellCustomGeneric<Person> tcp, Person p)
 		{
 			return;
 		}

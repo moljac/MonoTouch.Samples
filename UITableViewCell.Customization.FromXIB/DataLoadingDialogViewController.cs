@@ -10,7 +10,6 @@ using MonoTouch.UIKit;
 using MonoMobile.Dialog;
 
 using SampleData;
-using SampleData;
 
 namespace UITableViewCellCustomizationFromXIB
 {
@@ -20,11 +19,9 @@ namespace UITableViewCellCustomizationFromXIB
 			: base(UITableViewStyle.Plain, null)
 		{
 
-			ElementCustomDerivedGeneric<object, UITableViewCell> ecdg1;
-			ecdg1 = new ElementCustomDerivedGeneric<object, UITableViewCell> ();
+			ElementCustom ecdg1 = new ElementCustom();
 
-			List<ElementCustomDerivedGeneric<object, UITableViewCell>> data_ui;
-			data_ui = new List<ElementCustomDerivedGeneric<object, UITableViewCell>>();
+			List<ElementCustom> data_ui = new List<ElementCustom>();
 
 			List<SectionalInformation> data_sectional_info;
 			data_sectional_info = SectionalInformationDataFactory.SectionalInformation ();
@@ -32,23 +29,15 @@ namespace UITableViewCellCustomizationFromXIB
 			foreach (SectionalInformation si in data_sectional_info) 
 			{
 
-				ElementCustomDerivedGeneric<object, UITableViewCell> ecdg2;
-				ecdg2 = new ElementCustomDerivedGeneric<object, UITableViewCell>();
-
-				ecdg2.BusinessObject = si;
-				// Trick: 
-				// if null will be extracted from xib hahahahahahaha
-				ecdg2.PresentationObjectCell = null; 
-				ecdg2.ParentTableView = this.TableView;
+				ElementCustom ecdg2 = new ElementCustom();
 
 				//UITableViewCellCustom clc = ce.PresentationObjectCell as UITableViewCellCustom;
 				// clc.UpdateData(si.Name, si.Elapsed.ToString(), si.Delete);
 
-				UITableViewCellCustomListXIBless clcxl = new UITableViewCellCustomListXIBless();
 
-				ecdg2.UpdateData += delegate(UITableViewCell c)
-				{
-				};
+//				ecdg2.UpdateData += delegate(UITableViewCell c)
+//				{
+//				};
 
 				data_ui.Add(ecdg2);
 			}

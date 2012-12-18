@@ -32,14 +32,14 @@ namespace UITableViewCellCustomizationFromXIB
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 		
 			// Reuse a cell if one exists
-			UITableViewCellCustomAlternative cell;
-			cell = tableView.DequeueReusableCell ("ColorCell") as UITableViewCellCustomAlternative;
+			UITableViewCellCustom cell;
+			cell = tableView.DequeueReusableCell ("ColorCell") as UITableViewCellCustom;
 			
 			if (cell == null) 
 			{   
 				// need to allocate a cell
 				NSArray views = NSBundle.MainBundle.LoadNib ("UITableViewCellCustom", tableView, null);
-				cell = Runtime.GetNSObject (views.ValueAt (0)) as UITableViewCellCustomAlternative;
+				cell = Runtime.GetNSObject (views.ValueAt (0)) as UITableViewCellCustom;
 			}
 			
 			// This cell has been used before, so we need to update it's data

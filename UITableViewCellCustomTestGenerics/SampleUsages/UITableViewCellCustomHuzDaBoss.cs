@@ -8,7 +8,7 @@ using MonoMobile.Dialog;
 
 namespace UITableViewCellCustomTestGenerics.SampleUsages
 {
-	public partial class UITableViewCellCustomHuzDaBoss : UITableViewCellCustom<string>
+	public partial class UITableViewCellCustomHuzDaBoss : UITableViewCellCustomGeneric<string>
 	{  
 
 		public UITableViewCellCustomHuzDaBoss () : base()

@@ -8,7 +8,7 @@ using MonoMobile.Dialog;
 
 namespace UITableViewCellCustomTestGenerics.SampleUsages
 {
-	public partial class UITableViewCellCustomPerson : UITableViewCellCustom<Person>
+	public partial class UITableViewCellCustomPerson : UITableViewCellCustomGeneric<Person>
 	{  
 
 		public UITableViewCellCustomPerson () : base()

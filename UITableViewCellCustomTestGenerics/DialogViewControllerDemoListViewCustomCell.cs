@@ -21,17 +21,17 @@ namespace UITableViewCellCustomTestGenerics
 		public DialogViewControllerDemoListViewCustomCell () : base (UITableViewStyle.Plain, null)
 		{
 			// Assume all elements of the same type are loaded from the same XIB file
-			ElementDerivedCustom<UITableViewCellCustomPerson, Person>
+			ElementCustomGeneric<UITableViewCellCustomPerson, Person>
 				.DefaultCellReuseIdentifier = "UITableViewCellPerson";
-			ElementDerivedCustom<UITableViewCellCustomPerson, Person>
+			ElementCustomGeneric<UITableViewCellCustomPerson, Person>
 				.DefaultFileNameXIB = "UITableViewCellPerson";
 			
 			// Defining some element based on Custom Cell and some Business (Domain) object
-			ElementDerivedCustom<UITableViewCellCustomPerson, Person> edc1;
-			edc1 = new ElementDerivedCustom<UITableViewCellCustomPerson, Person>();
+			ElementCustomGeneric<UITableViewCellCustomPerson, Person> edc1;
+			edc1 = new ElementCustomGeneric<UITableViewCellCustomPerson, Person>();
 			
-			ElementDerivedCustom<UITableViewCellCustomPerson, Person> edc2;
-			edc2 = new ElementDerivedCustom<UITableViewCellCustomPerson, Person>()
+			ElementCustomGeneric<UITableViewCellCustomPerson, Person> edc2;
+			edc2 = new ElementCustomGeneric<UITableViewCellCustomPerson, Person>()
 			{
 				// Generic Version of the custom UITableViewCellCustom is made abstract to
 				// instruct user to inherit and implement required methods (for databinding)
@@ -46,8 +46,8 @@ namespace UITableViewCellCustomTestGenerics
 			};
 			edc2.CellCustom.DataBindMethod += BindCustomCellAndObject;
 			
-			ElementDerivedCustom<UITableViewCellCustomPerson, Person> edc3;
-			edc3 = new ElementDerivedCustom<UITableViewCellCustomPerson, Person>();
+			ElementCustomGeneric<UITableViewCellCustomPerson, Person> edc3;
+			edc3 = new ElementCustomGeneric<UITableViewCellCustomPerson, Person>();
 			
 			// Define UI
 			Root = new RootElement ("MTD") 
@@ -66,7 +66,7 @@ namespace UITableViewCellCustomTestGenerics
 				},
 				new Section ("Second Section")
 				{
-				  new ElementDerivedCustom<UITableViewCellCustomPerson, Person>()
+					new ElementCustomGeneric<UITableViewCellCustomPerson, Person>()
 				  {
 				    BusinessObject = new Person()
 				    		{
@@ -76,7 +76,7 @@ namespace UITableViewCellCustomTestGenerics
 				    		}
 				  }
 				, edc1
-				, new ElementDerivedCustom<UITableViewCellCustomPerson, Person>()
+						, new ElementCustomGeneric<UITableViewCellCustomPerson, Person>()
 					{
 						BusinessObject = new Person()
 						{
@@ -95,7 +95,7 @@ namespace UITableViewCellCustomTestGenerics
 		
 		// Drawback: custom cell should have controls publicly exposed
 		// Abandoned!
-		void BindCustomCellAndObject (UITableViewCellCustom<Person> tcp, Person p)
+		void BindCustomCellAndObject (UITableViewCellCustomGeneric<Person> tcp, Person p)
 		{
 		    
 			return;

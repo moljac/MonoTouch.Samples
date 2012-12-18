@@ -370,7 +370,7 @@ Global
 		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = UITableViewCellCustomTestGenerics\UITableViewCellCustomTestGenerics.csproj
+		StartupItem = UITableViewCell.Customization\UITableViewCell.Customization.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

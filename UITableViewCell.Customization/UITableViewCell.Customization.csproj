@@ -99,7 +99,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <InterfaceDefinition Include="UITableViewControllerForList.xib" />
+    <InterfaceDefinition Include="UITableViewSourceForListOfSamples.xib" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\MonoMobile.Dialog\MonoMobile.Dialog.Touch\MonoMobile.Dialog.Touch.csproj">
