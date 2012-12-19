@@ -1,6 +1,7 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
 <<<<<<< HEAD
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs">
     <Files>
       <File FileName="UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs" Line="23" Column="63" />
@@ -42,6 +43,12 @@
           </Node>
 >>>>>>> CustomCell.WorkInProgress
         </State>
+=======
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True" />
+>>>>>>> CustomCell.WorkInProgress
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

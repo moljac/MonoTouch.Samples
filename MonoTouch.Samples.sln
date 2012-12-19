@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XIBfullWithModifiedXIB", "X
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementsTestingAdvanced", "ElementsTestingAdvanced\ElementsTestingAdvanced.csproj", "{A4515001-5F82-401C-B4C1-B34B40C82E64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCell.WorkInProgress", "CustomCell.WorkInProgress\CustomCell\CustomCell.WorkInProgress.csproj", "{38832802-BE86-40C8-B876-28C5A8075A58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AdHoc|iPhone = AdHoc|iPhone
@@ -106,6 +108,26 @@ Global
 		{367D4ECC-D04A-41FB-A784-4D10F30666C8}.Release|iPhone.Build.0 = Release|iPhone
 		{367D4ECC-D04A-41FB-A784-4D10F30666C8}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{367D4ECC-D04A-41FB-A784-4D10F30666C8}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AdHoc|iPhone.ActiveCfg = Debug|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AdHoc|iPhone.Build.0 = Debug|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AdHoc|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AdHoc|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AppStore|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.AppStore|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Debug|iPhone.Build.0 = Debug|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Release|iPhone.ActiveCfg = Release|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Release|iPhone.Build.0 = Release|iPhone
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{38832802-BE86-40C8-B876-28C5A8075A58}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{41395186-7180-45D6-B89E-C4F2CB511036}.AdHoc|iPhone.ActiveCfg = Release|iPhone
 		{41395186-7180-45D6-B89E-C4F2CB511036}.Ad-Hoc|iPhone.ActiveCfg = Release|iPhone
 		{41395186-7180-45D6-B89E-C4F2CB511036}.AdHoc|iPhone.Build.0 = Release|iPhone
@@ -371,9 +393,13 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 <<<<<<< HEAD
+<<<<<<< HEAD
 		StartupItem = UITableViewCell.Customization\UITableViewCell.Customization.csproj
 =======
 		StartupItem = UITableViewCell.Customization.FromXIB\UITableViewCell.Customization.FromXIB.csproj
+>>>>>>> CustomCell.WorkInProgress
+=======
+		StartupItem = CustomCell.WorkInProgress\CustomCell\CustomCell.WorkInProgress.csproj
 >>>>>>> CustomCell.WorkInProgress
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
