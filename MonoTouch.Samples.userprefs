@@ -1,15 +1,22 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs">
     <Files>
       <File FileName="UITableViewCell.Customization/DialogViewControllerForElementCustomDerived.cs" Line="23" Column="63" />
       <File FileName="UITableViewCell.Customization/UITableViewSourceForListOfSamples.cs" Line="12" Column="48" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/UITableViewCellCustomListXIBless.cs">
+    <Files>
+      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/UITableViewCellCustomListXIBless.cs" Line="82" Column="1" />
+>>>>>>> CustomCell.WorkInProgress
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Option id="ShowAllFiles" value="True" />
           <Node name="MonoMobile.Dialog.Touch" expanded="True">
+<<<<<<< HEAD
             <Node name="ElementCustom" expanded="True" />
           </Node>
           <Node name="UITabBarWithTabBarOnTopWithDialogViewControllers" expanded="True">
@@ -23,6 +30,17 @@
           <Node name="UITableViewCell.Customization.FromXIB" expanded="True" />
           <Node name="UITableViewCellCustomTestGenerics" expanded="True" />
           <Node name="XIBlessNoUIViewController" expanded="True" />
+=======
+            <Node name="ElementCustom" expanded="True">
+              <Node name="UITableViewCellCustomListXIBless.cs" selected="True" />
+            </Node>
+          </Node>
+          <Node name="UITableViewCell.Customization.FromXIB" expanded="True" />
+          <Node name="UITableViewCellCustomTestGenerics" expanded="True">
+            <Node name="ElementCustom" expanded="True" />
+            <Node name="SampleUsages" expanded="True" />
+          </Node>
+>>>>>>> CustomCell.WorkInProgress
         </State>
       </Pad>
     </Pads>

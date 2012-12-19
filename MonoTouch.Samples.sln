@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesystemAndSharing", "FilesystemAndSharing\FilesystemAndSharing.csproj", "{367D4ECC-D04A-41FB-A784-4D10F30666C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XIBlessNoUIViewController", "XiblessNoUIViewController\XIBlessNoUIViewController.csproj", "{CDB9BE1D-F0A8-487E-8E87-19A784B864E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiblessNoUIViewController", "XIBlessNoUIViewController\XiblessNoUIViewController.csproj", "{CDB9BE1D-F0A8-487E-8E87-19A784B864E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XIBfull.To.XIBless.iPhone", "XIBfull.To.XIBless.iPhone\XIBfull.To.XIBless.iPhone.csproj", "{E6C7D810-4875-44CA-B285-085BE7512356}"
 EndProject
@@ -370,7 +370,11 @@ Global
 		{F668A965-5E62-45E8-BB00-CE020F1B635C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD
 		StartupItem = UITableViewCell.Customization\UITableViewCell.Customization.csproj
+=======
+		StartupItem = UITableViewCell.Customization.FromXIB\UITableViewCell.Customization.FromXIB.csproj
+>>>>>>> CustomCell.WorkInProgress
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

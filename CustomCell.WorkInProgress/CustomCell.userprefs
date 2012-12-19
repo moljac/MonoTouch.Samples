@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomCell/ListSource.cs">
+    <Files>
+      <File FileName="CustomCell/AppDelegate.cs" Line="34" Column="4" />
+      <File FileName="CustomCell/ListViewController.cs" Line="30" Column="4" />
+      <File FileName="CustomCell/ListSource.cs" Line="36" Column="53" />
+      <File FileName="CustomCell/CustomListCell.cs" Line="27" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
