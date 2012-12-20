@@ -22,7 +22,7 @@ namespace UITabBarWithTabBarOnTopWithDialogViewControllers
 			ElementCustom ec2 = new ElementCustom("UITableViewCellCustomPerson","UITableViewCellCustomPerson");
 			ec2.CellReuseIdentifier = "UITableViewCellCustomPerson";
 			
-			ec1.CellContentFactory += CellContentFactoryImplementationForPerson;
+			ec1.CellContentFactory += CellContentFactoryImplementationForPerson1;
 			
 			Section s = new Section("Custom Element Non Generic")
 			{

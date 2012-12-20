@@ -86,6 +86,7 @@
     <None Include="Info.plist" />
     <None Include="obsolete\CustomElement.cs" />
     <None Include="obsolete\CustomListCellXIBless.cs" />
+    <None Include="SampleData\UITableViewCellCustomPerson.xib" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\UITableViewCell.Customization.DataLoading\SampleData\SectionalInformation.cs">
@@ -117,9 +118,7 @@
     <Compile Include="UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.ManualXIBless.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="obsolete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\MonoMobile.Dialog\MonoMobile.Dialog.Touch\MonoMobile.Dialog.Touch.csproj">
       <Project>{CDFDE85F-F99B-44FD-A9F8-19224D517F3F}</Project>
@@ -127,9 +126,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="SampleData\UITableViewCellCustomPerson.xib">
-      <DependentUpon>UITableViewCellCustomPerson.cs</DependentUpon>
-    </InterfaceDefinition>
     <InterfaceDefinition Include="SampleData\sample_iPhone.xib" />
     <InterfaceDefinition Include="SampleData\sample_iPad.xib" />
     <InterfaceDefinition Include="SampleData\CustomUITableViewCell.xib" />

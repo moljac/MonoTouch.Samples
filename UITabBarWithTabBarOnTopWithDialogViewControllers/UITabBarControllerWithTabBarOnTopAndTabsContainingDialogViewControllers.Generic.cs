@@ -14,17 +14,37 @@ namespace UITabBarWithTabBarOnTopWithDialogViewControllers
 	{
 		Section SectionGenericSampleFactory ()
 		{
-			ElementCustom ec1 = new ElementCustom () {
-				CellReuseIdentifier = "UITableViewCellCustomPerson",
-				FileNameXIB = "UITableViewCellCustomPerson"
+			ElementCustom ec1 = new ElementCustom();
+			ElementCustom ec2 = new ElementCustom("UITableViewCellCustomPerson");
+			ElementCustom ec3 = new ElementCustom
+												(
+												  "CustomUITableViewCell"	// XIBname
+												, "CustomUITableViewCell"	// cell reuse index
+												);
+
+			List<ElementCustom> ecs = new List<ElementCustom>();
+			ElementCustom.DefaultFileNameXIB = "UITableViewCellCustomPerson";
+			ElementCustom.DefaultCellReuseIdentifier = "UITableViewCellCustomPerson";
+
+			for (int i = 1; i <= 20; i++)
+			{
+				ElementCustom ec = new ElementCustom();
+				if (i == 7)
+				{
+					ec.FileNameXIB = "CustomUITableViewCell";
+					ec.CellReuseIdentifier = "CustomUITableViewCell";
+				}
+				ecs.Add(ec);
+			}
+
+			Section s = new Section("Custom Element from XIB") 
+			{
+			  ec1
+			, ec2
+			, ec3
+			, ecs.ToArray()
 			};
-			ElementCustom ec2 = new ElementCustom ("UITableViewCellCustomPerson", "UITableViewCellCustomPerson");
-			ec2.CellReuseIdentifier = "UITableViewCellCustomPerson";
-			ec1.CellContentFactory += CellContentFactoryImplementationForPerson;
-			Section s = new Section ("Custom Element Non Generic") {
-				ec1,
-				ec2
-			};
+
 			return s;
 		}
 		
