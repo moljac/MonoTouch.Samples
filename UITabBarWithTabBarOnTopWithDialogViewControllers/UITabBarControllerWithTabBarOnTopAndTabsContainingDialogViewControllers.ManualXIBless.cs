@@ -24,6 +24,8 @@ namespace UITabBarWithTabBarOnTopWithDialogViewControllers
 
 			Section s = new Section("Custom Element Non Generic") 
 			{
+			  ec1
+			, ec2
 			};
 			
 			return s;
