@@ -6,7 +6,9 @@ using System.Collections.Generic;
 
 //using MonoTouch.Dialog;
 using MonoMobile.Dialog;
-using System.Drawing;
+
+
+using UITabBarWithTabBarOnTopWithDialogViewControllers.SampleUsages;
 
 namespace UITabBarWithTabBarOnTopWithDialogViewControllers 
 {
@@ -14,40 +16,48 @@ namespace UITabBarWithTabBarOnTopWithDialogViewControllers
 	{
 		Section SectionGenericSampleFactory ()
 		{
-			ElementCustom ec1 = new ElementCustom();
-			ElementCustom ec2 = new ElementCustom("UITableViewCellCustomPerson");
-			ElementCustom ec3 = new ElementCustom
-												(
-												  "CustomUITableViewCell"	// XIBname
-												, "CustomUITableViewCell"	// cell reuse index
-												);
+			ElementCustomGeneric<UITableViewCellCustomCar, Car> ec1;
+			ec1 = new ElementCustomGeneric<UITableViewCellCustomCar, Car>();
 
-			List<ElementCustom> ecs = new List<ElementCustom>();
-			ElementCustom.DefaultFileNameXIB = "UITableViewCellCustomPerson";
-			ElementCustom.DefaultCellReuseIdentifier = "UITableViewCellCustomPerson";
+			// Following Cell is loaded from XIB
+			ElementCustomGeneric<UITableViewCellCustomPerson, Person> ec2;
+			ec2 = new ElementCustomGeneric<UITableViewCellCustomPerson, Person>();
+			ec2.FileNameXIB = "UITableViewCellCustomPerson";
+			ec2.CellReuseIdentifier = "UITableViewCellCustomPerson";
 
-			for (int i = 1; i <= 20; i++)
-			{
-				ElementCustom ec = new ElementCustom();
-				if (i == 7)
-				{
-					ec.FileNameXIB = "CustomUITableViewCell";
-					ec.CellReuseIdentifier = "CustomUITableViewCell";
-				}
-				ecs.Add(ec);
-			}
+			// TODO: API brainstorming!
+			// ElementCustomGeneric<UITableViewCellCustomPerson, Person> ec3;
+			// ec3 = new ElementCustomGeneric<UITableViewCellCustomPerson, Person>();
+			// ec3.CellCustom.DataBindMethod += new DataBindDelegate<Person>(CellCustom_DataBindMethod);
 
-			Section s = new Section("Custom Element from XIB") 
+			Section s = new Section("Custom Element Generic") 
 			{
 			  ec1
 			, ec2
-			, ec3
-			, ecs.ToArray()
 			};
 
 			return s;
 		}
 		
+	}
+
+
+
+
+	/// <summary>
+	/// TODO: Iki can You make manual UI here?
+	/// </summary>
+	public partial class UITableViewCellCustomCar 
+		: MonoMobile.Dialog.UITableViewCellCustomGeneric<Car>
+	{
+		UILabel labelNameFirst = null;
+		UILabel labelNameSecond = null;
+
+		public override void DataBind(Car p)
+		{
+
+			return;
+		}
 	}
 }
 

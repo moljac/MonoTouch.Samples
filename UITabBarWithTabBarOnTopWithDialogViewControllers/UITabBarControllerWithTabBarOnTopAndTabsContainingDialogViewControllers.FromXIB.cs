@@ -10,13 +10,17 @@ namespace UITabBarWithTabBarOnTopWithDialogViewControllers
 {
 	public partial class UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers
 	{
+		/// <summary>
+		/// TODO: add sample with 2 UITableViewCells in single XIB
+		/// </summary>
+		/// <returns></returns>
 		static Section SectionFromXIBSampleFactory ()
 		{
 			ElementCustom ec1 = new ElementCustom();
 			ElementCustom ec2 = new ElementCustom("UITableViewCellCustomPerson");
 			ElementCustom ec3 = new ElementCustom
 												(
-												  "CustomUITableViewCell"		// XIBname
+												  "CustomUITableViewCell"	// XIBname
 												, "CustomUITableViewCell"	// cell reuse index
 												);
 			
