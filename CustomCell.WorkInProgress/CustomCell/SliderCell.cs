@@ -17,7 +17,7 @@ namespace CustomCell
 		{
 		}
 
-		public object GetSlider 
+		public UISlider Slider 
 		{
 
 			get 
