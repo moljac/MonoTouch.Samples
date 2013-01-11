@@ -1,0 +1,9 @@
+This sample was originally created by Michael Bluestein, you can find presentation here:
+
+http://www.slideshare.net/Xamarin/developing-ios-map-applications-with-c
+
+or video on youtube:
+
+http://www.youtube.com/watch?v=VqII7XSXwQw
+
+We had some problems with it, i couldn't manage my custom annotation class so i modified this. 

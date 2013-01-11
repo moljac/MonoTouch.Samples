@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapDemo", "MapDemo.csproj", "{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Debug|iPhone.Build.0 = Debug|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Release|iPhone.ActiveCfg = Release|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Release|iPhone.Build.0 = Release|iPhone
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{4C5AE7E3-9EC4-4432-8BFA-23031E68A5B7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MapDemo\MapDemo.csproj
+	EndGlobalSection
+EndGlobal
