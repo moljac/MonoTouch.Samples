@@ -1,4 +1,5 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad.6.1" />
   <MonoDevelop.Ide.Workbench ActiveDocument="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustom.cs">
     <Files>
@@ -9,10 +10,31 @@
       <File FileName="UITableViewCell.Customization.DataLoading/SampleData/SectionalInformation.cs" Line="1" Column="1" />
       <File FileName="UITabBarWithTabBarOnTopWithDialogViewControllers/UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.FromXIB.cs" Line="1" Column="1" />
       <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustom.cs" Line="15" Column="28" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilesystemAndSharing/Main.cs">
+    <Files>
+      <File FileName="FilesystemAndSharing/Main.cs" Line="16" Column="32" />
+      <File FileName="FilesystemAndSharing/AppDelegate.cs" Line="8" Column="21" />
+      <File FileName="FilesystemAndSharing/SampleCode.cs" Line="66" Column="37" />
+      <File FileName="BindingNativeLibrariesMonoConsoleAppToTestCompiledLibraryForPInvoke/Main.cs" Line="13" Column="48" />
+>>>>>>> BindingSamples Added
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="BindingNativeLibrariesCPPStaticLib" expanded="True" />
+          <Node name="BindingNativeLibrariesMonoConsoleAppToTestCompiledLibraryForPInvoke" expanded="True" />
+          <Node name="FilesystemAndSharing" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/BindingNativeLibrariesMonoConsoleAppToTestCompiledLibraryForPInvoke/Main.cs" line="20" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

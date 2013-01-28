@@ -1,0 +1,5 @@
+Name: BindingNativeLibrariesCPPStaticLib
+Description: 
+Version: 0.1
+Libs: -L"/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/BindingNativeLibrariesCPPStaticLib/bin/Debug" -lBindingNativeLibrariesCPPStaticLib
+Cflags: -I"/Users/mc/Desktop/src/libraries-holisticware/git[github.com]/MonoTouch.Samples/BindingNativeLibrariesCPPStaticLib"

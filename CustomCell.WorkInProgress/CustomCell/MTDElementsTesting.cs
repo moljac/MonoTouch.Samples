@@ -17,10 +17,10 @@ namespace CustomCell
 
 			StringElement sliderValues = new StringElement("");
 
-			sliderElement.slider.ValueChanged += (object sender, EventArgs e) => 
-			{
-				sliderValues.Caption = sliderElement.slider.Value.ToString();
-			};
+//			sliderElement.slider.ValueChanged += (object sender, EventArgs e) => 
+//			{
+//				sliderValues.Caption = sliderElement.slider.Value.ToString();
+//			};
 
 			Root = new RootElement ("MTDElementsTesting") 
 			{

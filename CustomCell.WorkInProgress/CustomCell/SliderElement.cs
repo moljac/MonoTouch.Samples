@@ -10,11 +10,10 @@ namespace CustomCell
 	{
 		static NSString key = new NSString ("CustomCellIdentifier");
 
-		public UISlider slider;
+		UISlider slider;
 
 		public SliderElement () : base (null)
-		{
-
+		{	
 		}
 		
 		public override UITableViewCell GetCell (UITableView tableView)
@@ -28,9 +27,8 @@ namespace CustomCell
 				// Slider is loaded from XIB/NIB, formatting and design was easier
 				var views = NSBundle.MainBundle.LoadNib ("SliderCell", tableView, null);
 				cell = Runtime.GetNSObject (views.ValueAt (0)) as SliderCell;
+				slider = cell.Slider;
 			}
-
-			slider = cell.Slider as UISlider;
 
 			return cell;
 		}

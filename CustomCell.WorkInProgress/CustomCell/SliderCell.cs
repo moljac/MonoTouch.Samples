@@ -19,13 +19,12 @@ namespace CustomCell
 
 		public UISlider Slider 
 		{
-
 			get 
 			{
 				return this.slider;
 			}
 		
-			set
+			private set
 			{
 
 			}
