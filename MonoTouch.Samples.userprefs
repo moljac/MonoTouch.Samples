@@ -1,8 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XIBAutoLayout/MainView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustom.cs">
     <Files>
       <File FileName="XIBAutoLayout/MainView.cs" Line="14" Column="45" />
+      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustomGeneric.cs" Line="120" Column="1" />
+      <File FileName="UITabBarWithTabBarOnTopWithDialogViewControllers/UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.cs" Line="51" Column="45" />
+      <File FileName="UITableViewCell.Customization.DataLoading/TabBarControllerWithTabContainingDialogViewController.cs" Line="17" Column="9" />
+      <File FileName="UITableViewCell.Customization.DataLoading/SampleData/SectionalInformation.cs" Line="1" Column="1" />
+      <File FileName="UITabBarWithTabBarOnTopWithDialogViewControllers/UITabBarControllerWithTabBarOnTopAndTabsContainingDialogViewControllers.FromXIB.cs" Line="19" Column="34" />
+      <File FileName="../MonoMobile.Dialog/MonoMobile.Dialog.Touch/ElementCustom/ElementCustom.cs" Line="15" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
